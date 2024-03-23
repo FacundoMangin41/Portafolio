@@ -3,6 +3,10 @@
 .sideBar{
     display: flex;
     gap: 1rem;
+    background-color: var(--BarraNavegacion);
+    box-shadow: 0px 0px 44px 6px var(--SombrasBarraNavegacion) inset;
+    -webkit-box-shadow: 0px 0px 44px 6px var(--SombrasBarraNavegacion) inset;
+    -moz-box-shadow: 0px 0px 44px 6px var(--SombrasBarraNavegacion) inset;
 }
 
 
