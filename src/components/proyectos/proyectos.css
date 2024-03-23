@@ -21,6 +21,7 @@
     width: clamp(1rem, 25rem, 95%);
     border-radius: 10px;
     border: 2px solid var(--bordeImagenesProyecto);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
 }
 
 .informacionProyecto h1{
@@ -29,6 +30,18 @@
 
 .ImagenDerechaCelulares{
     display: none;
+}
+
+.BotonGithubProyectos{
+    display: flex;
+    gap: 0.5rem;
+    color: black !important;
+    background-color: #cfcfcf !important;
+    border: 2px solid rgb(168, 168, 168) !important;
+}
+
+.BotonGithubProyectos:hover{
+    background-color: #c5c5c5 !important;
 }
 
 @media (max-width: 1135px) {

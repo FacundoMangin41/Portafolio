@@ -1,6 +1,17 @@
 import Box from '@mui/material/Box';
 import personalpage from "../../assets/personalpage.webp";
 import './proyectos.css';
+import Button from '@mui/material/Button';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+
+
+function handleClick() {
+    // Define la URL que quieres abrir en la nueva pestaña
+  const url = 'https://github.com/FacundoMangin41/Pagina-Personal';
+  // Abre una nueva pestaña con la URL especificada
+  window.open(url, '_blank');
+  }
 
 const Commander3D = () => {
     return (
@@ -10,6 +21,7 @@ const Commander3D = () => {
     <div className="informacionProyecto">
         <h1>Commander 3D</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ipsum voluptates, neque dignissimos libero quae, vero veniam doloremque dolorem iste ipsam, veritatis laboriosam. Magnam necessitatibus eos nam at eius doloribus?</p>
+        <Button onClick={handleClick} className='BotonGithubProyectos'><GitHubIcon/>GitHub</Button>
     </div>
     <img src={personalpage} alt="" className='ImagenDerecha'/>
 </div>
