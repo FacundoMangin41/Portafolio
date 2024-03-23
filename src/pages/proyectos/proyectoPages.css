@@ -1,0 +1,14 @@
+.PagesProyectos{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (max-width: 1135px) {
+    .PagesProyectos{
+        margin: 1rem 0;
+    }
+
+}
+
