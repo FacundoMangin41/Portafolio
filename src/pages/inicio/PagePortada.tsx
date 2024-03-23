@@ -1,4 +1,3 @@
-import React from 'react';
 import Portada from '../../components/inicio/Portada';
 
 const PagePortada = () => {

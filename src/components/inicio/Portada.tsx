@@ -1,4 +1,4 @@
-import React from 'react';
+
 import SendIcon from '@mui/icons-material/Send';
 
 import './inicioComponente.css'

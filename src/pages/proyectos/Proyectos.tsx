@@ -1,4 +1,3 @@
-import React from 'react';
 import Commander3D from '../../components/proyectos/Commander3D';
 import './proyectoPages.css';
 import SoftwareMunicipalidad from '../../components/proyectos/SoftwareMunicipalidad';
