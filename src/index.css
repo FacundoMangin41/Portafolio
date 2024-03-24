@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --letrasSidebar: black; 
+  --letrasSidebar: rgb(231, 231, 231); 
   --letrasPortada: #dfdfdf;
   --botonPortada: #8d8d8d;
   --hoverBotonPortada: #707070;
