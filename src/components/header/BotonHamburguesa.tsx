@@ -49,7 +49,7 @@ export default function BotonHamburguesa() {
       <List>
         <div className="imagenPerfil">
           <img src={perfil} alt="" />
-          <h1>Facundo Mangin</h1>
+          <h1>Facundo <br />Mangin</h1>
         </div>
 
         <Divider className="divider" />
