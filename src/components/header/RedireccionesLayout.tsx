@@ -10,7 +10,7 @@ import AutoStoriesIcon from '@mui/icons-material/AutoStories';
       };
     
     export const drawerItems = [
-        { label: 'Sobre Mi', path: '/', className: 'drawerItem' },
+        { label: 'Sobre Mi', path: '/sobre-mi', className: 'drawerItem' },
         { label: 'Trabajos', path: '/proyectos', className: 'drawerItem' },
         { label: 'Cursos Realizados', path: '/', className: 'drawerItem' }, // Puedes cambiar la ruta según tus necesidades
       ];

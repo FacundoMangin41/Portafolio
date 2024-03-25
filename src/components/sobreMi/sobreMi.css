@@ -1,0 +1,117 @@
+.contenedorSobreMi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    flex-direction: column; 
+    gap: 2rem;
+}
+
+.imagenPersonal img{
+    border-radius: 50%;
+    width: clamp(1rem, 25rem, 85vw);
+    border: 4px solid var(--recuadroContenedores);
+}
+
+.informacionSobreMi{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--recuadroContenedores);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.informacionSobreMi h1{
+    font-size: clamp(1rem, 2.8rem, 10vw);
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.informacionSobreMi p{
+    font-size:clamp(1rem, 1.7rem, 5vw);
+    padding: 0 5rem;
+}
+
+.datosPersonales{
+    display: flex;
+    flex-direction: row;
+}
+
+.experienciaLaboral{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--recuadroContenedores);
+    padding: 1rem 1rem 3rem;
+    border-radius: 10px;
+}
+@media (max-width: 1135px) {
+    .experienciaLaboral{
+        width: 90%;
+
+    }
+}
+
+.experienciaLaboral h2{
+margin: 0;
+}
+
+.experienciaLaboral h1{
+    margin: 0 0rem 1rem;
+    }
+.contenedoresEsperienciaLaboral{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    justify-content: center;
+}
+
+@media (max-width: 1135px) {
+    .contenedoresEsperienciaLaboral{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.Trabajos{
+background-color: rgb(240, 240, 240);
+padding: 1rem;
+border-radius: 10px;
+width: 48%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2rem;
+box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1135px) {
+    
+    .Trabajos{
+        width: 99%;
+        }
+}
+
+
+@media (max-width: 1135px) {
+    
+    .informacionSobreMi{
+        width: 90%;
+        padding: 1rem;
+        border-radius: 10px;
+        padding: 1.2rem 1rem 1.5rem;
+    }
+
+    .informacionSobreMi p{
+        padding: 0 0.5rem;
+    }
+
+}

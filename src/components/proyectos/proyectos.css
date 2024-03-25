@@ -12,7 +12,7 @@
     align-items: center;
     text-align: center;
     gap: 2rem;
-    background-color: #dfdfdf;
+    background-color: var(--recuadroContenedores);
     padding: 1rem;
     border-radius: 10px;
 }
@@ -49,10 +49,6 @@
     .containerProyectos{
         width: 90%;
         flex-direction: column;
-        gap: 2rem;
-        background-color: #dfdfdf;
-        padding: 1rem;
-        border-radius: 10px;
         padding: 1.2rem 1rem 1.5rem;
     }
 
