@@ -22,7 +22,7 @@ const Portada = () => {
                         <h3>Desarrollador FrontEnd ReactJS</h3>
                     </div>
                     <div className="botonPortada">
-                        <Link to="/proyectos" style={{ textDecoration: 'none' }}>
+                        <Link to="/sobre-mi" style={{ textDecoration: 'none' }}>
                             <Button endIcon={<SendIcon />} className='botonInicio'>
                                 Ver Más
                             </Button>
