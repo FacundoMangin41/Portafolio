@@ -15,7 +15,7 @@ function handleClick() {
 
 function handleClickPagina() {
     // Define la URL que quieres abrir en la nueva pestaña
-    const url = 'https://github.com/FacundoMangin41/Pagina-Personal';
+    const url = 'https://commander3d.netlify.app/';
     // Abre una nueva pestaña con la URL especificada
     window.open(url, '_blank');
 }
