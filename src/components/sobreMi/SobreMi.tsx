@@ -12,8 +12,8 @@ const SobreMi = () => {
             <div className="informacionSobreMi">
                 <p>Actualmente estoy terminando la carrera de
                     analista informática (solo me faltan 2
-                    materias) y me encuentro realizando un
-                    proyecto personal de una página  web de gestión. <br />
+                    materias) y me encuentro realizando una
+                    pagina web de gestion para el municipio <br />
                     Tengo varios cursos realizados los cuales pueden encontrarlos en la sección de este portafolio. <br />
                     Mi principal objetivo poder
                     desarrollarme en una empresa que me
