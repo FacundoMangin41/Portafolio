@@ -16,16 +16,13 @@ function handleClick() {
 const CursoReact = () => {
 
   return (
-<Box className='contenedorBoxCursos'>
+    <Box className='contenedorBoxCursos'>
       <div className="containerCursos">
         <div className="informacionCursos">
           <h1>React JS</h1>
-          <p>ReactJS es una biblioteca de JavaScript de código abierto 
-                        que se utiliza para construir interfaces de usuario interactivas y 
-                        dinámicas para aplicaciones web. Desarrollado por Facebook, ReactJS 
-                        se ha convertido en una herramienta fundamental en el mundo del 
-                        desarrollo web debido a su eficiencia y flexibilidad.</p>
-                        <Button onClick={handleClick} className='BotonGithubProyectos'><RemoveRedEyeIcon/> Certificado</Button>
+          <p>Para alcanzar esta certificación se necesitan tener conocimientos en Html / Css, JavaScript y por supuesto React. 
+            También se debe cumplir con los trabajos dados y para finalizar se debe aprobar un proyecto final.</p>
+          <Button onClick={handleClick} className='BotonGithubProyectos'><RemoveRedEyeIcon /> Certificado</Button>
         </div>
         <img src={ReactJS} alt="" className='ImagenDerecha' />
       </div>

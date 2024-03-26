@@ -20,13 +20,8 @@ const CursoHtml = () => {
       <div className="containerCursos">
         <div className="informacionCursos">
           <h1>HTML / CSS</h1>
-          <p>HTML es el lenguaje de marcado que se utiliza para definir la estructura y 
-            el contenido de una página web. Consiste en una serie de elementos o etiquetas que envuelven y 
-            organizan el contenido, como texto, imágenes, enlaces y otros elementos multimedia. <br />
-            CSS, por otro lado, es un lenguaje de estilo que se utiliza para controlar el aspecto visual y 
-            la presentación de una página web. Permite a los desarrolladores definir el color, la tipografía, 
-            el diseño y otros aspectos visuales de los elementos HTML. Con CSS, los desarrolladores pueden crear diseños atractivos y 
-            personalizados para sus páginas web, mejorando la experiencia del usuario y la estética general del sitio.
+          <p>Esta es la certificación inicial y más básica, que requiere completar la entrega de todos los trabajos asignados por los profesores y realizar un proyecto final. 
+            Este proyecto consistió en crear un portafolio personal adaptable a cualquier dispositivo móvil.
           </p>
           <Button onClick={handleClick} className='BotonGithubProyectos'><RemoveRedEyeIcon/> Certificado</Button>
         </div>

@@ -21,13 +21,9 @@ const CursoJavaScript = () => {
         <img src={carreraFrontEnd} alt="" className='ImagenIzquierda'/>
         <div className="informacionCursos">
             <h1>JavaScript</h1>
-            <p>JavaScript es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. 
-              Es utilizado principalmente en el 
-              desarrollo web para crear contenido interactivo y dinámico en las páginas web. <br />
-              Además de su uso en el desarrollo web, JavaScript también se ha expandido para ser utilizado en otros entornos, 
-              como el desarrollo de aplicaciones móviles (a través de frameworks como React Native o Ionic), 
-              el desarrollo de aplicaciones de servidor (utilizando Node.js), 
-              y el desarrollo de aplicaciones de escritorio (con herramientas como Electron).</p>
+            <p>Esta certificación se obtiene al completar las tareas asignadas en clase y al desarrollar un proyecto que incluya código JavaScript. 
+              El proyecto consistió en crear una página web proporcionada por los profesores o elegir diseñar y crear una página propia siguiendo ciertas pautas.
+            </p>
               <Button onClick={handleClick} className='BotonGithubProyectos'><RemoveRedEyeIcon/> Certificado</Button>
         </div>
         <img src={carreraFrontEnd} alt="" className='ImagenDerechaCelulares'/>

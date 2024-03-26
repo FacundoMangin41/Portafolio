@@ -20,10 +20,9 @@ const TituloFrontEnd = () => {
                 <img src={carreraFrontEnd} alt="" className='ImagenIzquierda'/>
                 <div className="informacionCursos">
                     <h1>Desarrollador Front End ReactJS</h1>
-                    <p>Se logra alcanzar este hito a través de la culminación de un proyecto final, que implica la creación de una página web. 
+                    <p>Se logra alcanzar este titulo a través de la culminación de un proyecto final, que implica la creación de una página web. 
                         Esta tarea mezcla todos los conocimientos adquiridos a lo largo del año, mientras se cumplen con los criterios establecidos 
-                        por el profesor. Es un ejercicio que fusiona habilidad, creatividad y 
-                        dedicación para dar vida a una plataforma digital que refleje el dominio adquirido en el campo de la tecnología y el diseño web.</p>
+                        por el profesor. </p>
                     <Button onClick={handleClick} className='BotonGithubProyectos'><RemoveRedEyeIcon/> Certificado</Button>
                 </div>
                 <img src={carreraFrontEnd} alt="" className='ImagenDerechaCelulares'/>
