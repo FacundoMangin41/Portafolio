@@ -9,6 +9,10 @@
     -moz-box-shadow: 0px 0px 44px 6px var(--SombrasBarraNavegacion) inset;
 }
 
+.layoutsidebar{
+    margin: 1rem 0;
+}
+
 .BotonHamburguesacolor{
 padding: 0.35rem !important;
 background-color: #fff !important;
@@ -47,6 +51,10 @@ min-width: 30px !important;
 
 .BotonHamburguesa{
     border-radius: 50%;
+}
+
+.divider{
+    background-color: var(--divider);
 }
 
 
