@@ -20,11 +20,10 @@ const TituloFrontEnd = () => {
                 <img src={carreraFrontEnd} alt="" className='ImagenIzquierda'/>
                 <div className="informacionCursos">
                     <h1>Desarrollador Front End ReactJS</h1>
-                    <p>ReactJS es una biblioteca de JavaScript de código abierto 
-                        que se utiliza para construir interfaces de usuario interactivas y 
-                        dinámicas para aplicaciones web. Desarrollado por Facebook, ReactJS 
-                        se ha convertido en una herramienta fundamental en el mundo del 
-                        desarrollo web debido a su eficiencia y flexibilidad.</p>
+                    <p>Se logra alcanzar este hito a través de la culminación de un proyecto final, que implica la creación de una página web. 
+                        Esta tarea mezcla todos los conocimientos adquiridos a lo largo del año, mientras se cumplen con los criterios establecidos 
+                        por el profesor. Es un ejercicio que fusiona habilidad, creatividad y 
+                        dedicación para dar vida a una plataforma digital que refleje el dominio adquirido en el campo de la tecnología y el diseño web.</p>
                     <Button onClick={handleClick} className='BotonGithubProyectos'><RemoveRedEyeIcon/> Certificado</Button>
                 </div>
                 <img src={carreraFrontEnd} alt="" className='ImagenDerechaCelulares'/>
