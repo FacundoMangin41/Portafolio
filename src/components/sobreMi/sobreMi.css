@@ -37,7 +37,7 @@
     margin-top: 1rem;
 } */
 .informacionSobreMi p{
-    font-size:clamp(1rem, 1.55rem, 5vw);
+    font-size:clamp(1rem, 1.3rem, 5vw);
     padding: 0 5rem;
 }
 

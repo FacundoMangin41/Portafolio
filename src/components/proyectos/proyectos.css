@@ -33,6 +33,11 @@
     font-size: 2.5rem;
 }
 
+.informacionProyecto p{
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
 .ImagenDerechaCelulares{
     display: none;
 }
