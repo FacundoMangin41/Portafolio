@@ -15,7 +15,7 @@
 
 .imagenPersonal img{
     border-radius: 10px;
-    width: clamp(1rem, 22rem, 90vw);
+    width: clamp(1rem, 22rem, 78vw);
     border: 3px solid var(--recuadroContenedores);
 }
 
