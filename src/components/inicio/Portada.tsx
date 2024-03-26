@@ -7,7 +7,21 @@ import { Box } from '@mui/material';
 import perfil from "../../assets/perfil.jpg";
 import PortadaDerecha from "../../assets/PordataDerecha.png";
 import { Link } from 'react-router-dom';
+import archivoPDF from './../../assets/CVFacundoMangin.pdf';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
+function handleClick() {
+    try {
+        const link = document.createElement('a');
+        link.href = archivoPDF;
+        link.setAttribute('download', 'CVFacundoMangin.pdf');
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode?.removeChild(link);
+    } catch (error) {
+        console.error('Error al descargar el archivo PDF:', error);
+    }
+}
 
 const Portada = () => {
     return (
@@ -27,6 +41,10 @@ const Portada = () => {
                                 Ver Más
                             </Button>
                         </Link>
+
+                        <div className="floating-button-PDF" onClick={handleClick}>
+                            <PictureAsPdfIcon className='BotonFlotantePdf' />
+                        </div>
                     </div>
 
                 </div>

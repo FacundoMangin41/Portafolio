@@ -3,6 +3,8 @@ import PagePortada from "../pages/inicio/PagePortada";
 import { Layout } from "../components/layout/Layout";
 import Proyectos from "../pages/proyectos/Proyectos";
 import SobreMi from "../pages/sobreMi/SobreMi";
+import CursosRealizados from "../pages/cursosRealizados/CursosRealizados";
+
 
 
 export const AppRouter = () => {
@@ -24,6 +26,11 @@ export const AppRouter = () => {
             <Route
               path="/sobre-mi"
               element={<SobreMi />}
+            /> 
+
+            <Route
+              path="/cursos"
+              element={<CursosRealizados />}
             /> 
 
         </Route>

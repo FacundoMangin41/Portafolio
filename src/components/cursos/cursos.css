@@ -1,0 +1,128 @@
+.contenedorBoxCursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.containerCursos{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: var(--recuadroContenedores);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.containerCursos img{
+    width: clamp(1rem, 25rem, 95%);
+    border-radius: 10px;
+    border: 2px solid var(--bordeImagenesProyecto);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.informacionCursos{
+    padding: 0 2rem;
+}
+
+.informacionCursos h1{
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.informacionCursos p{
+    font-size: 1.2rem;
+}
+
+.ImagenDerechaCelulares{
+    display: none;
+}
+
+.BotonGithubProyectos{
+    display: flex;
+    gap: 0.5rem;
+    color: black !important;
+    background-color: #cfcfcf !important;
+    border: 2px solid rgb(168, 168, 168) !important;
+}
+
+.BotonGithubProyectos:hover{
+    background-color: #c5c5c5 !important;
+}
+
+.BotonCertificados{
+    display: flex;
+    gap: 0.5rem;
+    color: black !important;
+    background-color: #cfcfcf !important;
+    border: 2px solid rgb(168, 168, 168) !important;
+}
+
+.BotonCertificados:hover{
+    background-color: #c5c5c5 !important;
+}
+
+@media (max-width: 1135px) {
+    
+    .containerCursos{
+        width: 90%;
+        flex-direction: column;
+        padding: 1.2rem 1rem 1.5rem;
+    }
+
+    .ImagenDerechaCelulares{
+        display: flex;
+    }
+
+    .ImagenIzquierda{
+        display: none;
+    }
+}
+
+
+
+
+
+.floating-button-certificado{
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--botonPortada);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+
+  .BotonFlotanteCertificado{
+    font-size: 3.8rem !important;
+  }
+  
+  .floating-button-certificado:hover {
+    background-color: var(--hoverBotonPortada);
+    transform: scale(1.1);
+  }
+
+  @media (max-width: 450px) {
+    .floating-button-certificado {
+        bottom: 100px;
+        width: 4rem;
+        height: 4rem;
+      }
+
+      .BotonFlotanteCertificado{
+        font-size: 2.8rem !important;
+      }
+  }
