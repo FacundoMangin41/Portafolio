@@ -72,7 +72,7 @@ min-width: 30px !important;
     color: var(--letrasSidebar);
     padding: 0.6rem;
     margin: 1rem 0;
-    background-color: var(--botonPortada);
+    background-color: var(--hoverBotonPortada);
     border-radius: 7px;
     cursor: pointer;
     border: 1px solid var(--letrasSidebar);
@@ -80,7 +80,7 @@ min-width: 30px !important;
 }
 
 .botonDescargarPdfSidebar p:hover{
-    background-color: var(--hoverBotonPortada);
+    background-color: var(--botonPortada);
 }
 
 

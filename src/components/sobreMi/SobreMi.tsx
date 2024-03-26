@@ -5,16 +5,17 @@ import fotoPersonal from "../../assets/fotoPersonal.jpg";
 const SobreMi = () => {
     return (
         <div className='contenedorSobreMi'>
+            <h1>Sobre Mi</h1>
             <div className="imagenPersonal">
                 <img src={fotoPersonal} alt="" />
             </div>
             <div className="informacionSobreMi">
-                <h1>Sobre Mi</h1>
                 <p>Actualmente estoy terminando la carrera de
                     analista informática (solo me faltan 2
                     materias) y me encuentro realizando un
-                    proyecto personal de una pagina web de gestion.
-                    Tengo como principal objetivo poder
+                    proyecto personal de una página  web de gestión. <br />
+                    Tengo realizados varios cursos que podrán en contra en dicha sección de este portafolio. <br />
+                    Mi principal objetivo poder
                     desarrollarme en una empresa que me
                     permita
                     perfeccionar mis técnicas y conocimientos
