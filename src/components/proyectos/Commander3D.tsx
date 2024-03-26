@@ -27,13 +27,11 @@ const Commander3D = () => {
             <div className="containerProyectos">
                 <div className="informacionProyecto">
                     <h1>Commander 3D</h1>
-                    <p>Le damos una cordial bienvenida a nuestra plataforma de impresiones 3D, donde convergen la
-                            innovación y la tecnología para ofrecer una experiencia única. Nos dirigimos a un público joven,
-                            apasionado por la creatividad y el ingenio, con una página elegante, responsive, intuitiva y con
-                            muchos efectos visuales. <br />
-                            Podrán descubrir una variedad de proyectos emocionantes y darán vida a sus ideas más audaces a
-                            través de nuestras avanzadas capacidades de impresión 3D. Le invitamos a explorar el futuro de la
-                            fabricación personalizada con nosotros.</p>
+                    <p>
+                        Commander 3D fue creado con el propósito de exhibir los trabajos realizados en impresión 3D,
+                        dirigido a un público joven apasionado por la creatividad y el ingenio. <br />
+                        Todos los detalles de esta página se pueden encontrar en el repositorio de GitHub.</p>
+                        
                     <div className="botonesProyectos">
                         <button onClick={handleClick} className='BotonProyecto'><GitHubIcon /></button>
                         <button onClick={handleClickPagina} className='BotonProyecto'><RemoveRedEyeIcon /></button>
