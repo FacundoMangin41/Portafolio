@@ -7,14 +7,14 @@ import { Box } from '@mui/material';
 import perfil from "../../assets/perfil.jpg";
 import PortadaDerecha from "../../assets/PordataDerecha.png";
 import { Link } from 'react-router-dom';
-import archivoPDF from './../../assets/CVFacundoMangin.pdf';
+import archivoPDF from './../../assets/CV Facundo Mangin - Analista en Informatica 2024.pdf';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 function handleClick() {
     try {
         const link = document.createElement('a');
         link.href = archivoPDF;
-        link.setAttribute('download', 'CVFacundoMangin.pdf');
+        link.setAttribute('download', 'CV Facundo Mangin - Analista en Informatica 2024.pdf');
         document.body.appendChild(link);
         link.click();
         link.parentNode?.removeChild(link);
