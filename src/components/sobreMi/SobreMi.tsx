@@ -14,7 +14,7 @@ const SobreMi = () => {
                     analista informática (solo me faltan 2
                     materias) y me encuentro realizando un
                     proyecto personal de una página  web de gestión. <br />
-                    Tengo realizados varios cursos que podrán en contra en dicha sección de este portafolio. <br />
+                    Tengo varios cursos realizados pueden encontrarlos en la sección de este portafolio. <br />
                     Mi principal objetivo poder
                     desarrollarme en una empresa que me
                     permita
