@@ -4,6 +4,7 @@ import './proyectos.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Button from '@mui/material/Button';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import Swal from 'sweetalert2';
 
 function handleClick() {
     // Define la URL que quieres abrir en la nueva pestaña
@@ -13,10 +14,12 @@ function handleClick() {
 }
 
 function handleClickPagina() {
-    // Define la URL que quieres abrir en la nueva pestaña
-    const url = 'https://github.com/FacundoMangin41/Pagina-Personal';
-    // Abre una nueva pestaña con la URL especificada
-    window.open(url, '_blank');
+    Swal.fire({
+        icon: "error",
+        title: `Software Aeroclub Lincoln`,
+        text: `Este software es usado por el aeroclub Lincoln de forma local`,
+        showConfirmButton: true,
+    })
 }
 
 const AeroClub = () => {
@@ -27,7 +30,14 @@ const AeroClub = () => {
                     <img src={aeroclubLincoln} alt="" className='ImagenIzquierda' />
                     <div className="informacionProyecto">
                         <h1>Software de Gestion Aeroclub Lincoln</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius ipsum voluptates, neque dignissimos libero quae, vero veniam doloremque dolorem iste ipsam, veritatis laboriosam. Magnam necessitatibus eos nam at eius doloribus?</p>
+                        <p>El objetivo del proyecto es la creación de un sistema de software destinado a los
+                            aeroclubes de la Argentina, con el propósito de optimizar la gestión de sus actividades
+                            cotidianas, entre las cuales pueden mencionarse: formación de pilotos, mantenimiento
+                            de las aeronaves utilizadas, controles automatizados para asegurar el cumplimiento de
+                            las disposiciones y reglamentaciones vigentes, control de stock de insumos críticos,
+                            administración del capital social, promoción de las actividades aeronáuticas, entre
+                            otras.
+                        </p>
                         <div className="botonesProyectos">
                             <button onClick={handleClick} className='BotonProyecto'><GitHubIcon /></button>
                             <button onClick={handleClickPagina} className='BotonProyecto'><RemoveRedEyeIcon /></button>
