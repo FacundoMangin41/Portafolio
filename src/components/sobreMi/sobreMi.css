@@ -14,9 +14,9 @@
 }
 
 .imagenPersonal img{
-    border-radius: 50%;
-    width: clamp(1rem, 22rem, 85vw);
-    border: 4px solid var(--recuadroContenedores);
+    border-radius: 10px;
+    width: clamp(1rem, 22rem, 90vw);
+    border: 3px solid var(--recuadroContenedores);
 }
 
 .informacionSobreMi{
