@@ -9,6 +9,8 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import archivoPDF from './../../assets/CV Facundo Mangin - Analista en Informatica 2024.pdf';
 
 import './header.css'
 
@@ -25,9 +27,23 @@ interface DrawerItem {
 }
 
 interface Props {
-  drawerItemsContactos: DrawerItem[]; 
-  drawerItems: DrawerItem[]; 
-  iconMap: { [key: string]: React.ReactNode }; 
+  drawerItemsContactos: DrawerItem[];
+  drawerItems: DrawerItem[];
+  iconMap: { [key: string]: React.ReactNode };
+}
+
+
+function handleClick() {
+  try {
+    const link = document.createElement('a');
+    link.href = archivoPDF;
+    link.setAttribute('download', 'CV Facundo Mangin - Analista en Informatica 2024.pdf');
+    document.body.appendChild(link);
+    link.click();
+    link.parentNode?.removeChild(link);
+  } catch (error) {
+    console.error('Error al descargar el archivo PDF:', error);
+  }
 }
 
 
@@ -81,7 +97,13 @@ export default function BotonHamburguesa() {
           ))}
         </div>
 
-        
+        <Divider className="divider" />
+
+        <div className="layoutsidebar">
+          <div className="botonDescargarPdfSidebar" onClick={handleClick}>
+            <p><PictureAsPdfIcon />Descargar CV</p>
+          </div>
+        </div>
 
       </List>
 
@@ -91,12 +113,12 @@ export default function BotonHamburguesa() {
   );
 
   return (
-      <div className='BotonHamburguesa'>
-        <Button className='BotonHamburguesacolor' onClick={toggleDrawer(true)}> <MenuIcon sx={{ color: 'black', fontSize: '1.5rem' }} />
-        </Button>
-        <Drawer open={open} onClose={toggleDrawer(false)}>
-          {DrawerList}
-        </Drawer>
-      </div>
+    <div className='BotonHamburguesa'>
+      <Button className='BotonHamburguesacolor' onClick={toggleDrawer(true)}> <MenuIcon sx={{ color: 'black', fontSize: '1.5rem' }} />
+      </Button>
+      <Drawer open={open} onClose={toggleDrawer(false)}>
+        {DrawerList}
+      </Drawer>
+    </div>
   );
 }

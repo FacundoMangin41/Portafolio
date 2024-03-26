@@ -57,6 +57,32 @@ min-width: 30px !important;
     background-color: var(--divider);
 }
 
+.botonDescargarPdfSidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonDescargarPdfSidebar p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    color: var(--letrasSidebar);
+    padding: 0.6rem;
+    margin: 1rem 0;
+    background-color: var(--botonPortada);
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px solid var(--letrasSidebar);
+    transition: all 0.25s ease-in-out;
+}
+
+.botonDescargarPdfSidebar p:hover{
+    background-color: var(--hoverBotonPortada);
+}
+
 
 /* 
 ----------------------------------------------------
