@@ -1,3 +1,4 @@
+
 import Box from '@mui/material/Box';
 import personalpage from "../../assets/personalpage.webp";
 import './proyectos.css';
@@ -21,6 +22,8 @@ function handleClickPagina() {
 }
 
 const Commander3D = () => {
+
+
     return (
 
         <Box className='contenedorBoxProyecto'>

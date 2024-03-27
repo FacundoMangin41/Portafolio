@@ -27,44 +27,35 @@ function handleClick() {
 }
 
 const Portada = () => {
+    const elementRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-    const letras = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-      if (letras.current) {
-        ScrollReveal().reveal(letras.current, {
-          // Configuración de ScrollReveal
-          duration: 2500,
-
-        });
-      }
+  useEffect(() => {
+    elementRefs.current.forEach((element) => {
+        if (element) {
+          ScrollReveal().reveal(element, {
+            // Configuración de ScrollReveal
+            duration: 1000,
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom'
+          });
+        }
+      });
     }, []);
 
-
-    const boton = useRef<HTMLDivElement>(null);
-
-    useEffect(() => {
-      if (boton.current) {
-        ScrollReveal().reveal(boton.current, {
-          // Configuración de ScrollReveal
-          duration: 2500,
-
-        });
-      }
-    }, []);
 
     return (
         <Box className='contenedorInicio'>
             <div className="informacionPortada">
-                <div className="imagenInicio">
+                <div className="imagenInicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
                     <img src={perfil} alt="" />
                 </div>
                 <div className="contenedorEscritoInicio">
-                    <div className="escritoUnicio" ref={letras}>
+                    <div className="escritoUnicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
                         <h1>Facundo Mangin</h1>
-                        <h3>Desarrollador FrontEnd ReactJS</h3>
+                        <h3>Desarrollador FrontEnd React</h3>
                     </div>
-                    <div className="botonPortada" ref={boton}>
+                    <div className="botonPortada" ref={(element) => { if (element) elementRefs.current.push(element); }}>
                         <Link to="/sobre-mi" style={{ textDecoration: 'none' }} >
                             <Button endIcon={<SendIcon />} className='botonInicio'>
                                 Ver Más

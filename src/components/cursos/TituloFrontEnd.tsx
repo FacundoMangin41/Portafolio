@@ -19,7 +19,7 @@ const TituloFrontEnd = () => {
             <div className="containerCursos">
                 <img src={carreraFrontEnd} alt="" className='ImagenIzquierda'/>
                 <div className="informacionCursos">
-                    <h1>Desarrollador Front End ReactJS</h1>
+                    <h1>Desarrollador FrontEnd React</h1>
                     <p>Se logra alcanzar este titulo a través de la culminación de un proyecto final, que implica la creación de una página web. 
                         Esta tarea mezcla todos los conocimientos adquiridos a lo largo del año, mientras se cumplen con los criterios establecidos 
                         por el profesor. </p>

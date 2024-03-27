@@ -5,20 +5,24 @@ import fotoPersonal from "../../assets/fotoPersonal.jpg";
 
 const SobreMi = () => {
 
-    const myRef = useRef<HTMLDivElement>(null);
+    const elementRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
-    if (myRef.current) {
-      ScrollReveal().reveal(myRef.current, {
-        // Configuración de ScrollReveal
-        duration: 2500,
-
+    elementRefs.current.forEach((element) => {
+        if (element) {
+          ScrollReveal().reveal(element, {
+            // Configuración de ScrollReveal
+            duration: 1000,
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom'
+          });
+        }
       });
-    }
-  }, []);
+    }, []);
 
     return (
-        <div className='contenedorSobreMi' ref={myRef}>
+        <div className='contenedorSobreMi' ref={(element) => { if (element) elementRefs.current.push(element); }}>
             <h1>Sobre Mi</h1>
             <div className="imagenPersonal">
                 <img src={fotoPersonal} alt="" />
