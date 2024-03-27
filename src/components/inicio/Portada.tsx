@@ -34,7 +34,7 @@ const Portada = () => {
       if (letras.current) {
         ScrollReveal().reveal(letras.current, {
           // Configuración de ScrollReveal
-          delay: 600,
+          duration: 2500,
 
         });
       }
@@ -47,7 +47,7 @@ const Portada = () => {
       if (boton.current) {
         ScrollReveal().reveal(boton.current, {
           // Configuración de ScrollReveal
-          delay: 400,
+          duration: 2500,
 
         });
       }

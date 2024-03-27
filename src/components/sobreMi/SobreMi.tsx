@@ -11,7 +11,8 @@ const SobreMi = () => {
     if (myRef.current) {
       ScrollReveal().reveal(myRef.current, {
         // Configuración de ScrollReveal
-        delay: 600,
+        duration: 2500,
+
       });
     }
   }, []);
