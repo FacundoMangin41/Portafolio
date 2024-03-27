@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import ScrollReveal from 'scrollreveal';
 import './sobreMi.css'
 import fotoPersonal from "../../assets/fotoPersonal.jpg";
 
 const SobreMi = () => {
+
+    const myRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (myRef.current) {
+      ScrollReveal().reveal(myRef.current, {
+        // Configuración de ScrollReveal
+        delay: 600,
+      });
+    }
+  }, []);
+
     return (
-        <div className='contenedorSobreMi'>
+        <div className='contenedorSobreMi' ref={myRef}>
             <h1>Sobre Mi</h1>
             <div className="imagenPersonal">
                 <img src={fotoPersonal} alt="" />

@@ -10,6 +10,9 @@ import { Link } from 'react-router-dom';
 import archivoPDF from './../../assets/CV Facundo Mangin - Analista en Informatica 2024.pdf';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
+import React, { useEffect, useRef } from 'react';
+import ScrollReveal from 'scrollreveal';
+
 function handleClick() {
     try {
         const link = document.createElement('a');
@@ -24,6 +27,32 @@ function handleClick() {
 }
 
 const Portada = () => {
+
+    const letras = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+      if (letras.current) {
+        ScrollReveal().reveal(letras.current, {
+          // Configuración de ScrollReveal
+          delay: 600,
+
+        });
+      }
+    }, []);
+
+
+    const boton = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+      if (boton.current) {
+        ScrollReveal().reveal(boton.current, {
+          // Configuración de ScrollReveal
+          delay: 400,
+
+        });
+      }
+    }, []);
+
     return (
         <Box className='contenedorInicio'>
             <div className="informacionPortada">
@@ -31,24 +60,22 @@ const Portada = () => {
                     <img src={perfil} alt="" />
                 </div>
                 <div className="contenedorEscritoInicio">
-                    <div className="escritoUnicio">
+                    <div className="escritoUnicio" ref={letras}>
                         <h1>Facundo Mangin</h1>
                         <h3>Desarrollador FrontEnd ReactJS</h3>
                     </div>
-                    <div className="botonPortada">
-                        <Link to="/sobre-mi" style={{ textDecoration: 'none' }}>
+                    <div className="botonPortada" ref={boton}>
+                        <Link to="/sobre-mi" style={{ textDecoration: 'none' }} >
                             <Button endIcon={<SendIcon />} className='botonInicio'>
                                 Ver Más
                             </Button>
                         </Link>
-
-                        <div className="floating-button-PDF" onClick={handleClick}>
-                            <PictureAsPdfIcon className='BotonFlotantePdf' />
-                        </div>
                     </div>
-
                 </div>
             </div>
+            <div className="floating-button-PDF" onClick={handleClick}>
+                            <PictureAsPdfIcon className='BotonFlotantePdf' />
+                        </div>
             <img src={PortadaDerecha} alt="" />
 
         </Box>

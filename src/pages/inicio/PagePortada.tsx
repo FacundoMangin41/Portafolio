@@ -8,6 +8,9 @@ const PagePortada = () => {
     // Abre una nueva pestaña con la URL especificada
     window.open(url, '_blank');
     };
+
+
+
     return (
         <div>
             <Portada/>
