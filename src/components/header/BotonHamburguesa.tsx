@@ -67,6 +67,12 @@ export default function BotonHamburguesa() {
           <h1>Facundo <br />Mangin</h1>
         </div>
 
+        <div className="layoutsidebar">
+          <div className="botonDescargarPdfSidebar" onClick={handleClick}>
+            <p><PictureAsPdfIcon />Descargar CV</p>
+          </div>
+        </div>
+
         <Divider className="divider" />
 
         <div className="layoutsidebar">
@@ -98,12 +104,6 @@ export default function BotonHamburguesa() {
         </div>
 
         <Divider className="divider" />
-
-        <div className="layoutsidebar">
-          <div className="botonDescargarPdfSidebar" onClick={handleClick}>
-            <p><PictureAsPdfIcon />Descargar CV</p>
-          </div>
-        </div>
 
       </List>
 
