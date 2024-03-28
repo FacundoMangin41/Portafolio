@@ -8,6 +8,7 @@ import TituloFrontEnd from '../../components/cursos/TituloFrontEnd';
 import BotonCertificados from '../../components/cursos/BotonCertificados';
 
 const CursosRealizados = () => {
+   
     const handleClick = () => {
         // Define la URL que quieres abrir en la nueva pestaña
     const url = 'https://inove.com.ar/areapersonal/certificado/?dni=41689175';
@@ -34,7 +35,6 @@ const CursosRealizados = () => {
 
     return (
         <div className='cursosRealizados'>      
-            <BotonCertificados onClick={handleClick}/> 
             
             <div ref={(element) => { if (element) elementRefs.current.push(element); }}>
             <TituloFrontEnd/>
@@ -53,6 +53,7 @@ const CursosRealizados = () => {
             <CursoHtml/>
             </div>
             
+            <BotonCertificados onClick={handleClick}/> 
             
             
         </div>
