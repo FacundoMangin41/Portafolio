@@ -44,7 +44,7 @@ min-width: 30px !important;
 }
 
 .imagenPerfil img{
-    width: clamp(1rem , 12rem, 90vw);
+    width: clamp(1rem , 11rem, 90vw);
     border-radius: 50%;
     border: 2px solid var(--letrasSidebar);
 }
