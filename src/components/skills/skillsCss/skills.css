@@ -1,0 +1,66 @@
+.contenedorBoxSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.containerSkills{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    background-color: var(--recuadroContenedores);
+    padding: 2rem 8rem;
+    border-radius: 10px;
+}
+
+.containerSkills img{
+    width: clamp(1rem, 14rem, 95%);
+    border-radius: 10px;
+    border: 2px solid var(--bordeImagenesProyecto);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin: 0 2.5rem;
+}
+
+.informacionSkills{
+    padding: 0 2rem;
+}
+
+.informacionSkills h1{
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.informacionSkills p{
+    font-size: 1.2rem;
+}
+
+.ImagenDerechaCelularesSkills{
+    display: none;
+}
+
+@media (max-width: 1135px) {
+    
+    .containerSkills{
+        width: 90%;
+        flex-direction: column;
+        padding: 1.2rem 1rem 1.5rem;
+    }
+
+    .ImagenDerechaCelularesSkills{
+        display: flex;
+    }
+
+    .ImagenIzquierdaSkills{
+        display: none;
+    }
+
+    .containerSkills img{
+        width: clamp(1rem, 10rem, 95%);
+    }
+}

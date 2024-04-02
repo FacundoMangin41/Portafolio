@@ -4,6 +4,7 @@ import { Layout } from "../components/layout/Layout";
 import Proyectos from "../pages/proyectos/Proyectos";
 import SobreMi from "../pages/sobreMi/SobreMi";
 import CursosRealizados from "../pages/cursosRealizados/CursosRealizados";
+import Skills from "../pages/habilidades/Skills";
 
 
 
@@ -11,27 +12,32 @@ export const AppRouter = () => {
   return (
     <>
       <Routes>
-        <Route 
-          index 
+        <Route
+          index
           element={<PagePortada />}>
         </Route>
 
         <Route path="/" element={<Layout />}>
-            
-            <Route
-              path="/proyectos"
-              element={<Proyectos />}
-            />  
 
-            <Route
-              path="/sobre-mi"
-              element={<SobreMi />}
-            /> 
+          <Route
+            path="/proyectos"
+            element={<Proyectos />}
+          />
 
-            <Route
-              path="/cursos"
-              element={<CursosRealizados />}
-            /> 
+          <Route
+            path="/sobre-mi"
+            element={<SobreMi />}
+          />
+
+          <Route
+            path="/cursos"
+            element={<CursosRealizados />}
+          />
+
+          <Route
+            path="/habilidades"
+            element={<Skills/>}
+          />
 
         </Route>
 

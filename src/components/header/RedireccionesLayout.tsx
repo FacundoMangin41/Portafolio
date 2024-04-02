@@ -6,6 +6,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import DrawIcon from '@mui/icons-material/Draw';
 
     export const iconMap: { [key: string]: JSX.Element } = {
         Trabajos: <CreateIcon />,
@@ -15,6 +16,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
         Linkedin: <LinkedInIcon/>,
         Instagram: <InstagramIcon/>,
         Facebook: <FacebookIcon/>,
+        Habilidades: <DrawIcon/>,
 
       };
     
@@ -22,6 +24,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
         { label: 'Sobre Mi', path: '/sobre-mi', className: 'drawerItem' },
         { label: 'Trabajos', path: '/proyectos', className: 'drawerItem' },
         { label: 'Cursos Realizados', path: '/cursos', className: 'drawerItem' }, // Puedes cambiar la ruta según tus necesidades
+        { label: 'Habilidades', path: '/habilidades', className: 'drawerItem' },
       ];
     
       export const drawerItemsContactos = [
