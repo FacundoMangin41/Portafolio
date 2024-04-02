@@ -9,6 +9,7 @@ import PortadaDerecha from "../../assets/PordataDerecha.png";
 import { Link } from 'react-router-dom';
 import archivoPDF from './../../assets/CV Facundo Mangin - Analista en Informatica 2024.pdf';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import cv from "../../assets/cv.jpg";
 
 import React, { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
@@ -66,7 +67,7 @@ const Portada = () => {
                 </div>
             </div>
             <div className="floating-button-PDF" onClick={handleClick}>
-                            <PictureAsPdfIcon className='BotonFlotantePdf' />
+                            <img src={cv} alt="" />
                         </div>
             <img src={PortadaDerecha} alt="" />
 

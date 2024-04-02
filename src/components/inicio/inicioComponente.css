@@ -156,6 +156,12 @@ img {
     border-radius: 50%;
   }
 
+  .floating-button-PDF img{
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+  }
+
   .BotonFlotantePdf{
     font-size: 3.8rem !important;
   }
