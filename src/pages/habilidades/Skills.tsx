@@ -2,7 +2,6 @@ import { useEffect, useRef } from 'react';
 import CardReact from '../../components/skills/CardReact';
 import "./skills.css";
 import ScrollReveal from 'scrollreveal';
-import CardJavaScript from '../../components/skills/CardJavaScript';
 import HtmlCss from '../../components/skills/HtmlCss';
 import MaterialUi from '../../components/skills/MaterialUi';
 import Bootstrap from '../../components/skills/Bootstrap';
@@ -11,6 +10,7 @@ import Figma from '../../components/skills/Figma';
 import Canva from '../../components/skills/Canva';
 import Office from '../../components/skills/Office';
 import Java from '../../components/skills/Java';
+import JavaScriptTypeScript from '../../components/skills/JavaScriptTypeScript';
 
 const Skills = () => {
 
@@ -46,7 +46,7 @@ const Skills = () => {
                 <CardReact />
             </div>
             <div ref={(element) => { if (element) elementRefs.current.push(element); }}>
-                <CardJavaScript/>
+                <JavaScriptTypeScript/>
             </div>
             <div ref={(element) => { if (element) elementRefs.current.push(element); }}>
                 <HtmlCss/>
