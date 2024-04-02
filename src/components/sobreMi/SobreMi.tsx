@@ -24,27 +24,29 @@ const SobreMi = () => {
 
     return (
         <div className='contenedorSobreMi' ref={(element) => { if (element) elementRefs.current.push(element); }}>
-            <h1 className='tituloSobreMi'>Sobre Mi</h1>
-            <div className="imagenPersonal">
-                <img src={fotoPersonal} alt="" />
-            </div>
-            <div className="contenedorInformacionPersonal">
-                <h1>Sobre Mi</h1>
-                <div className="informacionSobreMi">
-                    <p>Actualmente estoy terminando la carrera de
-                        analista informática <em>(solo me faltan 2
-                            materias)</em> y me encuentro realizando una
-                        pagina web de gestion para el municipio de Baradero. <br />
-                        Tengo varios cursos realizados los cuales pueden encontrarlos en la sección de este portafolio. <br />
-                        Mi principal objetivo es poder
-                        desarrollarme en una empresa que me permita
-                        perfeccionar mis técnicas y conocimientos
-                        junto a otros profesionales. <br />
-                        Tambien soy un entusiasta del deporte, amante de los viajes, aficionado a los videojuegos y partidario de los encuentros familiares. </p>
-                        <BotonContactame subject={''} body={''} />
+            <div className="segundoContenedorSobreMi">
+                <h1 className='tituloSobreMi'>Sobre Mi</h1>
+                <div className="imagenPersonal">
+                    <img src={fotoPersonal} alt="" />
                 </div>
-            </div>
+                <div className="contenedorInformacionPersonal">
+                    <h1>Sobre Mi</h1>
+                    <div className="informacionSobreMi">
+                        <p>Actualmente estoy terminando la carrera de
+                            analista informática <em>(solo me faltan 2
+                                materias)</em> y me encuentro realizando una
+                            pagina web de gestion para el municipio de Baradero. <br />
+                            Tengo varios cursos realizados los cuales pueden encontrarlos en la sección de este portafolio. <br />
+                            Mi principal objetivo es poder
+                            desarrollarme en una empresa que me permita
+                            perfeccionar mis técnicas y conocimientos
+                            junto a otros profesionales. <br />
+                            Tambien soy un entusiasta del deporte, amante de los viajes, aficionado a los videojuegos y partidario de los encuentros familiares. </p>
+                        <BotonContactame subject={''} body={''} />
+                    </div>
+                </div>
 
+            </div>
         </div>
     );
 };

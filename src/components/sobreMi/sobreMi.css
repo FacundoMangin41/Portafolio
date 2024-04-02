@@ -4,13 +4,21 @@
     align-items: center;
     text-align: center;  
     /* flex-direction: column;  */
-    gap: 2rem;
+
     margin: 0 13rem;
     min-height: 80vh;
 }
 
+.segundoContenedorSobreMi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    /* flex-direction: column;  */
+    gap: 2rem;
+}
 @media (max-width: 1500px) {
-    .contenedorSobreMi{
+    .segundoContenedorSobreMi{
         flex-direction: column;
         margin: 0 2rem;
     }
@@ -75,7 +83,7 @@ display: none ;
 
 .informacionSobreMi p{
     margin-top: 0;
-    font-size:clamp(1rem, 1.25rem, 5vw);
+    font-size:clamp(1rem, 1.3rem, 140%);
     padding: 0 1rem;
 }
 
@@ -159,6 +167,11 @@ box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
 }
 
 .botonSobreMi{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem ;
     background-color: var(--botonPortada) !important;
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 import './sobreMi.css'
+import EmailIcon from '@mui/icons-material/Email';
 
 interface EmailButtonProps {
     subject: string;
@@ -17,7 +18,7 @@ interface EmailButtonProps {
   
     return (
       <Button variant="contained" className='botonSobreMi' onClick={handleButtonClick}>
-        Contacto
+        <EmailIcon/>Contacto
       </Button>
     );
   };
