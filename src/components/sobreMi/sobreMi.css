@@ -9,6 +9,12 @@
     min-height: 80vh;
 }
 
+@media (max-width: 466px) {
+    .contenedorSobreMi{
+        margin: 0 1rem;
+    }
+}
+
 .segundoContenedorSobreMi{
     display: flex;
     justify-content: center;
@@ -16,13 +22,19 @@
     text-align: center;  
     /* flex-direction: column;  */
     gap: 2rem;
+    background-color: rgba(36, 36, 36, 0.842);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 2px solid var(--letrasSidebar)
 }
 @media (max-width: 1500px) {
     .segundoContenedorSobreMi{
         flex-direction: column;
         margin: 0 2rem;
+        padding: 1rem;
     }
 }
+
 
 .tituloSobreMi{
 display: none ;
@@ -51,8 +63,8 @@ display: none ;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: jus;
-    background-color: var(--recuadroContenedores);
+    text-align: center;
+    color: var(--letrasSidebar);
     padding: 1rem;
     border-radius: 10px;
 }
@@ -85,6 +97,7 @@ display: none ;
     margin-top: 0;
     font-size:clamp(1rem, 1.3rem, 140%);
     padding: 0 1rem;
+    color: var(--letrasSidebar);
 }
 
 @media (max-width: 1135px) {
@@ -106,17 +119,6 @@ display: none ;
     flex-direction: row;
 }
 
-.experienciaLaboral{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--recuadroContenedores);
-    padding: 1rem 1rem 3rem;
-    border-radius: 10px;
-}
 @media (max-width: 1135px) {
     .experienciaLaboral{
         width: 90%;
@@ -172,7 +174,14 @@ box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
     justify-content: center;
     align-items: center;
     gap: 0.5rem ;
-    background-color: var(--botonPortada) !important;
+    background-color: transparent !important;
+    border: 1px solid #fff !important;
 }
+
+.botonSobreMi:hover{
+    background-color: #3a3a3a !important;
+    border: 1px solid #fff !important;
+}
+
 
 
