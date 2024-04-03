@@ -32,9 +32,11 @@ const SobreMi = () => {
                 <div className="contenedorInformacionPersonal">
                     <h1>Sobre Mi</h1>
                     <div className="informacionSobreMi">
-                        <p>Actualmente estoy terminando la carrera de
+                        <p>Estoy en búsqueda activa de empleo, sin importar el campo laboral, ya sea en informática o como operario. 
+                            Mi principal objetivo es trabajar y lograr independencia económica.
+                            <br />Actualmente estoy terminando la carrera de
                             analista informática <em>(solo me faltan 2
-                                materias)</em> y me encuentro realizando una
+                            materias)</em> y me encuentro realizando una
                             pagina web de gestion para el municipio de Baradero. <br />
                             Tengo varios cursos realizados los cuales pueden encontrarlos en la sección de este portafolio. <br />
                             Mi principal objetivo es poder
