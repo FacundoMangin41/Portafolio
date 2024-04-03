@@ -39,8 +39,7 @@ const SobreMi = () => {
                             materias)</em> y me encuentro realizando una
                             pagina web de gestion para el municipio de Baradero. <br />
                             Tengo varios cursos realizados los cuales pueden encontrarlos en la sección de este portafolio. <br />
-                            Mi principal objetivo es poder
-                            desarrollarme en una empresa que me permita
+                            Me gustaria poder desarrollarme en una empresa que permita
                             perfeccionar mis técnicas y conocimientos
                             junto a otros profesionales. <br />
                             Tambien soy un entusiasta del deporte, amante de los viajes, aficionado a los videojuegos y partidario de los encuentros familiares. </p>
