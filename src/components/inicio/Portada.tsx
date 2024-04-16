@@ -48,12 +48,17 @@ const Portada = () => {
     return (
         <Box className='contenedorInicio'>
             <div className="informacionPortada">
+                <div className="contenedorEscritoInicio">
+                    <div className="escritoUnicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
+                        <h1>Facundo Mangin</h1>
+                    </div>
+                </div>
+
                 <div className="imagenInicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
                     <img src={perfil} alt="" />
                 </div>
                 <div className="contenedorEscritoInicio">
                     <div className="escritoUnicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
-                        <h1>Facundo Mangin</h1>
                         <h3>Analista en Informática</h3>
                         <h3>Desarrollador FrontEnd React</h3>
                     </div>
