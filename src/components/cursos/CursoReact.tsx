@@ -7,7 +7,7 @@ import './cursos.css'
 
 function handleClick() {
   // Define la URL que quieres abrir en la nueva pestaña
-  const url = 'https://github.com/FacundoMangin41/Pagina-Personal';
+  const url = 'https://admin.inovecode.com/perfil/561/certificados/18/proyecto/';
   // Abre una nueva pestaña con la URL especificada
   window.open(url, '_blank');
 }

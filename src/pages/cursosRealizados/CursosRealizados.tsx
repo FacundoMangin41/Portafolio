@@ -6,6 +6,7 @@ import CursoJavaScript from '../../components/cursos/CursoJavaScript';
 import CursoReact from '../../components/cursos/CursoReact';
 import TituloFrontEnd from '../../components/cursos/TituloFrontEnd';
 import BotonCertificados from '../../components/cursos/BotonCertificados';
+import CursoPythonInicial from '../../components/cursos/CursoPythonInicial';
 
 const CursosRealizados = () => {
    
@@ -52,8 +53,13 @@ const CursosRealizados = () => {
 
             <CursoHtml/>
             </div>
+
+            <div ref={(element) => { if (element) elementRefs.current.push(element); }}>
+
+            <CursoPythonInicial/>
+            </div>
             
-            <BotonCertificados onClick={handleClick}/> 
+            {/* <BotonCertificados onClick={handleClick}/>  */}
             
             
         </div>

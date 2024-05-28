@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 
 function handleClick() {
     // Define la URL que quieres abrir en la nueva pestaña
-    const url = 'http://23.92.69.190/perfil/561/certificados/14/Proyecto';
+    const url = 'https://admin.inovecode.com/perfil/561/certificados/carrera/frontend/';
     // Abre una nueva pestaña con la URL especificada
     window.open(url, '_blank');
   }
