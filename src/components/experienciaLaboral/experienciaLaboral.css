@@ -1,0 +1,99 @@
+.contenedorExperienciaLaboral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerExperienciaLaboral {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--recuadroContenedores);
+    border-radius: 10px;
+    padding: 1rem 0;
+    flex-direction: column;
+}
+
+.contenedorExperiencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+@media (max-width: 1335px) {
+    .containerExperienciaLaboral{
+        width: 90%;
+        flex-direction: column;
+        padding: 1.2rem 1rem 1.5rem;
+    }
+    .contenedorExperiencia{
+        flex-direction: column;
+    }
+}
+
+.containerExperienciaLaboral img{
+    width: clamp(1rem, 14rem, 95%);
+    border-radius: 10px;
+    border: 2px solid var(--bordeImagenesProyecto);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin: 0 2.5rem;
+}
+
+@media (max-width: 1135px) {
+    .containerExperienciaLaboral img{
+        width: clamp(1rem, 10rem, 95%);
+    }
+}
+
+.imagenExperiencia{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experienciaTextos{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0 0;
+    width: 50%;
+}
+
+@media (max-width: 1135px) {
+    .experienciaTextos h1{
+        text-align: center;
+    }
+    .experienciaTextos h2{
+        text-align: center;
+    }
+    .experienciaTextos h3{
+        text-align: center;
+    }
+}
+
+
+.containerExperienciaLaboral .experienciaTextos h1{
+    margin: 0;
+}
+
+.containerExperienciaLaboral .experienciaTextos h2{
+    margin: 0;
+}
+
+.containerExperienciaLaboral .experienciaTextos h3{
+    margin: 0;
+}
+
+.containerExperienciaLaboral  h4{
+    margin: 0;
+}
+
+.containerExperienciaLaboral  h5{
+    margin: 1rem 0 0;
+}

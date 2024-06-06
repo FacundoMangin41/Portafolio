@@ -5,6 +5,7 @@ import Proyectos from "../pages/proyectos/Proyectos";
 import SobreMi from "../pages/sobreMi/SobreMi";
 import CursosRealizados from "../pages/cursosRealizados/CursosRealizados";
 import Skills from "../pages/habilidades/Skills";
+import Experiencia from "../pages/Laboral/Experiencia";
 
 
 
@@ -18,6 +19,11 @@ export const AppRouter = () => {
         </Route>
 
         <Route path="/" element={<Layout />}>
+
+        <Route
+            path="/experiencia-laboral"
+            element={<Experiencia />}
+          />
 
           <Route
             path="/proyectos"
