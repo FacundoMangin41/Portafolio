@@ -13,7 +13,7 @@ export default function ButtonAppBar() {
         <Toolbar className='sideBar'>
             <BotonHamburguesa/>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight:'600' }}>
-            PORTAFOLIO
+            FACUNDO MANGIN | PORTAFOLIO
           </Typography>
         </Toolbar>
       </AppBar>
