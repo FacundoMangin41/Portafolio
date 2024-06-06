@@ -14,6 +14,14 @@
     flex-direction: column;
 }
 
+.containerExperienciaLaboral h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
 .contenedorExperiencia{
     display: flex;
     justify-content: center;
@@ -66,6 +74,9 @@
 }
 
 @media (max-width: 1135px) {
+    .experienciaTextos{
+        width: 95%;
+    }
     .experienciaTextos h1{
         text-align: center;
     }
