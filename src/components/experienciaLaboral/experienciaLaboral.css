@@ -4,7 +4,7 @@
     align-items: center;
 }
 .containerExperienciaLaboral {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,7 @@
     text-align: center;
 
 }
+
 
 .contenedorExperiencia{
     display: flex;
@@ -40,6 +41,32 @@
     .contenedorExperiencia{
         flex-direction: column;
     }
+
+    .contenedorExperiencia h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenedorExperiencia h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .contenedorExperiencia h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experienciaListas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
 
 .containerExperienciaLaboral img{

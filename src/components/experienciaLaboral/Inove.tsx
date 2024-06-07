@@ -14,11 +14,13 @@ const Inove = () => {
                     <div className="experienciaTextos">
                         <h1>Desarrollador FrontEnd - ReactJS</h1>
                         <h2>Programas mas importantes</h2>
-                        <ul>
-                            <li>Software de Gestión Municipal Baradero</li>
-                            <li>Catalogo de Impresión 3D</li>
-                            <li>Software de Gestión Aeroclub Lincoln</li>
-                        </ul>
+                        <div className="experienciaListas">
+                            <ul>
+                                <li>Software de Gestión Municipal Baradero</li>
+                                <li>Catalogo de Impresión 3D</li>
+                                <li>Software de Gestión Aeroclub Lincoln</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <h4>Desde 2023 - Hasta 2023</h4>
