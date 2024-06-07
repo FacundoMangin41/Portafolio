@@ -32,8 +32,8 @@ const SobreMi = () => {
                 <div className="contenedorInformacionPersonal">
                     <h1>Sobre Mi</h1>
                     <div className="informacionSobreMi">
-                        <p>Estoy en búsqueda activa de empleo, sin importar el campo laboral, ya sea en informática o como operario. 
-                            Mi principal objetivo es trabajar y lograr independencia económica.
+                        <p>Hola, mi nombre es Facundo Mangin, tengo 24 años, resido en Baradero, Buenos Aires, Argentina 
+                            y tengo como principal objetivo trabajar y lograr independencia económica.
                             <br />Actualmente estoy terminando la carrera de
                             analista informática <em>(solo me faltan 2
                             materias)</em> y me encuentro realizando una
