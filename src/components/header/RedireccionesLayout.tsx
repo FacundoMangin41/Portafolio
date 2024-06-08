@@ -10,7 +10,7 @@ import DrawIcon from '@mui/icons-material/Draw';
 import WorkIcon from '@mui/icons-material/Work';
 
     export const iconMap: { [key: string]: JSX.Element } = {
-        Trabajos: <CreateIcon />,
+        Proyectos: <CreateIcon />,
         'Sobre Mi': <AssignmentIndIcon />,
         Certificaciones: <AutoStoriesIcon />,
         WhatsApp: <WhatsAppIcon/>,
@@ -24,7 +24,7 @@ import WorkIcon from '@mui/icons-material/Work';
     
     export const drawerItems = [
         { label: 'Sobre Mi', path: '/sobre-mi', className: 'drawerItem' },
-        { label: 'Trabajos', path: '/proyectos', className: 'drawerItem' },
+        { label: 'Proyectos', path: '/proyectos', className: 'drawerItem' },
         { label: 'Experiencia Laboral', path: '/experiencia-laboral', className: 'drawerItem' },
         { label: 'Certificaciones', path: '/cursos', className: 'drawerItem' }, // Puedes cambiar la ruta según tus necesidades
         { label: 'Habilidades', path: '/habilidades', className: 'drawerItem' },
