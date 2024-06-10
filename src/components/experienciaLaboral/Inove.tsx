@@ -7,6 +7,7 @@ const Inove = () => {
     return (
         <Box className='contenedorExperienciaLaboral'>
             <div className='containerExperienciaLaboral'>
+            <h1>Desarrollador FrontEnd - ReactJS</h1>
                 <div className="contenedorExperiencia">
                     <div className="imagenExperiencia">
                         <img src={FotoInove} alt="" />

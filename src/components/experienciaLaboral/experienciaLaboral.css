@@ -10,8 +10,18 @@
     align-items: center;
     background-color: var(--recuadroContenedores);
     border-radius: 10px;
-    padding: 1rem 0;
+    padding: 2rem 0;
     flex-direction: column;
+}
+
+.containerExperienciaLaboral h1{
+margin: 0;
+}
+
+@media (max-width: 1335px) {
+    .containerExperienciaLaboral h1{
+        display: none;
+    }
 }
 
 .containerExperienciaLaboral h5{
@@ -98,8 +108,12 @@
     justify-content: center;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1rem 0 0;
+    padding: 0;
     width: 50%;
+}
+
+.experienciaTextos h1{
+    display: none;
 }
 
 @media (max-width: 1135px) {
@@ -108,6 +122,7 @@
     }
     .experienciaTextos h1{
         text-align: center;
+        display: flex;
     }
     .experienciaTextos h2{
         text-align: center;

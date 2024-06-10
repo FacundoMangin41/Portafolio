@@ -7,6 +7,7 @@ const MunicipalidadBaradero = () => {
     return (
         <Box className='contenedorExperienciaLaboral'>
             <div className='containerExperienciaLaboral'>
+                <h1>Municipalidad de baradero</h1>
                 <div className="contenedorExperiencia">
                     <div className="imagenExperiencia">
                         <img src={FotoMunicipalidad} alt="" />
