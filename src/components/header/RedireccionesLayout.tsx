@@ -8,6 +8,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import DrawIcon from '@mui/icons-material/Draw';
 import WorkIcon from '@mui/icons-material/Work';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
     export const iconMap: { [key: string]: JSX.Element } = {
         Proyectos: <CreateIcon />,
@@ -19,6 +20,7 @@ import WorkIcon from '@mui/icons-material/Work';
         Facebook: <FacebookIcon/>,
         Habilidades: <DrawIcon/>,
         'Experiencia Laboral': <WorkIcon/>,
+        GitHub: <GitHubIcon/>,
 
       };
     
@@ -31,6 +33,7 @@ import WorkIcon from '@mui/icons-material/Work';
       ];
     
       export const drawerItemsContactos = [
+        { label: 'GitHub', path:'https://github.com/FacundoMangin41', className: 'drawerItem' },
         { label: 'WhatsApp', path: 'https://api.whatsapp.com/send?phone=543329305304', className: 'drawerItem' },
         { label: 'Linkedin', path: 'https://www.linkedin.com/in/facundo-mangin-65359a268/',  className: 'drawerItem' },
         { label: 'Instagram', path: 'https://www.instagram.com/facumangin/', className: 'drawerItem' },
