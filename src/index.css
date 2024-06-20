@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -20,15 +24,16 @@
 
   --letrasSidebar: rgb(231, 231, 231); 
   --letrasPortada: #dfdfdf;
-  --botonPortada: #8d8d8d;
-  --hoverBotonPortada: #707070;
+  --botonPortada: #407c7c;
+  --hoverBotonPortada: #327070;
   --bordeImagenesProyecto: #aaaaaa;
   --botonLetras: #fff;
   --botonGithub: ;
-  --BarraNavegacion: #3a3a3a;
-  --SombrasBarraNavegacion: #bdbdbdbf;
+  --BarraNavegacion: #192139;
+  --SombrasBarraNavegacion: transparent;
   --recuadroContenedores: #dfdfdf;
   --divider: #adadad;
+  --recuadroSobreMi: #00000059;
 }
 
 h1{
@@ -46,6 +51,10 @@ p{
 body {
   margin: 0;
   min-height: 100vh;
-  background: url(./assets/fondo.jpg) !important;
+
+  /* Color de toda la pagina */
+  background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0f133a 44.41%, #101034 56.46%, #060322 69.58%, #050231 100%, #010027 0);
+  /* background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #010027 0, #050231 100%, #060322 69.58%, #101034 56.46%, #0f133a 44.41%, #0142a0 0); */
+  background-size: cover;
   background-size: cover;
 }

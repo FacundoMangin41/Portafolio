@@ -30,51 +30,67 @@ function handleClick() {
 const Portada = () => {
     const elementRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  useEffect(() => {
-    elementRefs.current.forEach((element) => {
-        if (element) {
-          ScrollReveal().reveal(element, {
-            // Configuración de ScrollReveal
-            duration: 1000,
-            delay: 200,
-            distance: '20px',
-            origin: 'bottom'
-          });
-        }
-      });
+    useEffect(() => {
+        elementRefs.current.forEach((element) => {
+            if (element) {
+                ScrollReveal().reveal(element, {
+                    // Configuración de ScrollReveal
+                    duration: 1000,
+                    delay: 200,
+                    distance: '20px',
+                    origin: 'bottom'
+                });
+            }
+        });
     }, []);
 
 
     return (
         <Box className='contenedorInicio'>
             <div className="informacionPortada">
-                <div className="contenedorEscritoInicio">
-                    <div className="escritoUnicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
-                        <h1>Facundo Mangin</h1>
+
+            <div className="imagenInicio" id='portadaFotoArriba' ref={(element) => { if (element) elementRefs.current.push(element); }}>
+                    <img src={perfil} alt="" />
+                </div>
+
+                <div className="containerPortada">
+                    <div className="contenedorEscritoInicio">
+                        <div className="escritoUnicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
+                            <h1>Facundo Mangin</h1>
+                        </div>
                     </div>
+
+                    <div className="contenedorEscritoInicio">
+                        <div className="escritoUnicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
+                            <h3>"Poseo certificación como <span>desarrollador frontend especializado en React</span> y también estoy a punto de finalizar la carrera de
+                                <span> analista en informática</span>.
+                                Esto me permite diseñar interfaces interactivas y desarrollar soluciones informáticas eficientes"</h3>
+                        </div>
+                        <div className="botonPortada" ref={(element) => { if (element) elementRefs.current.push(element); }}>
+                            <Link to="/sobre-mi" style={{ textDecoration: 'none' }} >
+                                <Button endIcon={<SendIcon />} className='botonInicio'>
+                                    Ingresar
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* <div className="imagenInicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
+                    <img src={perfil} alt="" />
+                </div> */}
+
                 </div>
 
                 <div className="imagenInicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
                     <img src={perfil} alt="" />
                 </div>
-                <div className="contenedorEscritoInicio">
-                    <div className="escritoUnicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
-                        <h3>Analista en Informática</h3>
-                        <h3>Desarrollador FrontEnd React</h3>
-                    </div>
-                    <div className="botonPortada" ref={(element) => { if (element) elementRefs.current.push(element); }}>
-                        <Link to="/sobre-mi" style={{ textDecoration: 'none' }} >
-                            <Button endIcon={<SendIcon />} className='botonInicio'>
-                                Ver Más
-                            </Button>
-                        </Link>
-                    </div>
+
+                <div className="floating-button-PDF" onClick={handleClick}>
+                    <img src={cv} alt="" />
                 </div>
+                {/* <img src={PortadaDerecha} alt="" /> */}
+
             </div>
-            <div className="floating-button-PDF" onClick={handleClick}>
-                            <img src={cv} alt="" />
-                        </div>
-            <img src={PortadaDerecha} alt="" />
 
         </Box>
     );
