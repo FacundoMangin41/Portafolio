@@ -52,8 +52,8 @@
     display: flex;
     gap: 0.5rem;
     padding: 0.5rem !important;
-    color: black !important;
-    background-color: #cfcfcf !important;
+    color: var(--letrasPortada) !important;
+    background-color:  var(--botonPortada) !important;
     border: 2px solid rgb(168, 168, 168) !important;
     border-radius: 45%;
 }

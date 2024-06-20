@@ -22,7 +22,7 @@ const Granix = () => {
                         </div>
                     </div>
                 </div>
-                <h4>Desde 2024 - Actualmente</h4>
+                <h4>Desde 2024 - hasta 2024</h4>
             </div>
         </Box>
     );

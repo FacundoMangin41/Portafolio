@@ -44,16 +44,16 @@
 .BotonGithubProyectos{
     display: flex;
     gap: 0.5rem;
-    color: black !important;
-    background-color: #cfcfcf !important;
+    color: var(--letrasPortada) !important;
+    background-color: var(--botonPortada) !important;
     border: 2px solid rgb(168, 168, 168) !important;
 }
 
 .BotonGithubProyectos:hover{
-    background-color: #c5c5c5 !important;
+    background-color:  var(--hoverBotonPortada) !important;
 }
 
-.BotonCertificados{
+/* .BotonCertificados{
     display: flex;
     gap: 0.5rem;
     color: black !important;
@@ -63,7 +63,7 @@
 
 .BotonCertificados:hover{
     background-color: #c5c5c5 !important;
-}
+} */
 
 @media (max-width: 1135px) {
     
@@ -86,7 +86,7 @@
 
 
 
-.floating-button-certificado{
+/* .floating-button-certificado{
     position: fixed;
     bottom: 120px;
     right: 20px;
@@ -125,4 +125,4 @@
       .BotonFlotanteCertificado{
         font-size: 2.8rem !important;
       }
-  }
+  } */
