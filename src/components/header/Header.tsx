@@ -39,7 +39,7 @@ export default function ButtonAppBar() {
           </Typography>
         </Toolbar>
       </AppBar>
-      <div style={{ paddingTop: '64px' }}>
+      <div style={{ paddingTop: '48px' }}>
       </div>
     </Box>
   );
