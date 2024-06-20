@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0f133a 44.41%, #101034 56.46%, #060322 69.58%, #050231 100%, #010027 0);
+    background: var(--fondo);
     /* background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #010027 0, #050231 100%, #060322 69.58%, #101034 56.46%, #0f133a 44.41%, #0142a0 0); */
     background-size: cover;
     box-shadow: 0px 0px 20px 6px rgba(255, 255, 255, 0.75) inset;

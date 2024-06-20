@@ -35,6 +35,13 @@
   --recuadroContenedores: #dfdfdf;
   --divider: #adadad;
   --recuadroSobreMi: #00000059;
+  --fondo: radial-gradient(79.43% 251.58% at 23.18% 73.07%, 
+  #0043a7 0%,  /* Azul eléctrico */
+  #0E1B47 44.41%, 
+  #0C1333 56.46%, 
+  #070823 69.58%, 
+  #05051A 100%, 
+  #020013 0%);
 }
 
 h1{
@@ -53,8 +60,9 @@ body {
   margin: 0;
   min-height: 100vh;
 
+  background: var(--fondo);
   /* Color de toda la pagina */
-  background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0f133a 44.41%, #101034 56.46%, #060322 69.58%, #050231 100%, #010027 0);
+  /* background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0a0b1f 44.41%, #0c0b24 56.46%, #080518 69.58%, #070416 100%, #020113 0); */
   /* background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #010027 0, #050231 100%, #060322 69.58%, #101034 56.46%, #0f133a 44.41%, #0142a0 0); */
   background-size: cover;
   background-size: cover;
