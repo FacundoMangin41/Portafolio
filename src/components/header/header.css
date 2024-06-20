@@ -101,5 +101,8 @@ min-width: 30px !important;
     background-color: var(--BarraNavegacion) !important;
 }
 
+.drawerItem:hover{
+    background-color: var(--hoverBarraNavegacion)!important;
+}
 /*----------------------------------------------------
 ---------------------------------------------------- */
