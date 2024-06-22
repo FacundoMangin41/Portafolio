@@ -87,16 +87,16 @@ const Portada: React.FC = () => {
     return (
         <Box className='contenedorInicio'>
             <div className="redesSocialesPortada">
-                <a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/facumangin/" target="_blank" rel="noopener noreferrer">
                     <InstagramIcon className='iconPortada'/>
                 </a>
-                <a href="https://www.linkedin.com/in/tu_usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/facundo-mangin-65359a268/" target="_blank" rel="noopener noreferrer">
                     <LinkedInIcon className='iconPortada'/>
                 </a>
-                <a href="https://wa.me/tu_numero" target="_blank" rel="noopener noreferrer">
+                <a href="https://api.whatsapp.com/send?phone=543329305304" target="_blank" rel="noopener noreferrer">
                     <WhatsAppIcon className='iconPortada'/>
                 </a>
-                <a href="https://www.facebook.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/facundo.mangin/" target="_blank" rel="noopener noreferrer">
                     <FacebookIcon className='iconPortada'/>
                 </a>
             </div>
