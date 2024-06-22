@@ -21,7 +21,6 @@ import typescript from "../../assets/herramientas/typescript.png";
 import react from "../../assets/herramientas/react.png";
 import bootstrap from "../../assets/herramientas/bootstrap.png";
 import sass from "../../assets/herramientas/sass.png";
-import npm from "../../assets/herramientas/npm.png";
 import trello from "../../assets/herramientas/trello.png";
 import vscode from "../../assets/herramientas/vs-code.png";
 import materialUI from "../../assets/herramientas/materialUI.png";
@@ -139,13 +138,6 @@ const Portada = () => {
 
                                     <div className="card-icon">
                                         <img src={sass} alt="JavaScript logo" />
-                                    </div>
-                                </div>
-
-                                <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={npm} alt="JavaScript logo" />
                                     </div>
                                 </div>
 
