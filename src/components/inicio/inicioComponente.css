@@ -22,7 +22,7 @@
 }
 
 .imagenInicio img {
-    width: clamp(1rem, 28rem, 90vw);
+    width: clamp(1rem, 32rem, 90vw);
     border-radius: 50%;
     border: 2px solid white !important;
 }
@@ -68,9 +68,10 @@
 }
 
 .escritoUnicio h1 {
-    font-size: clamp(1rem, 4.7rem, 11vw);
+    font-size: clamp(1rem, 4.7rem, 8.6vw);
     font-family: "Orbitron", sans-serif;
     margin: 0;
+    text-shadow: 0.1em 0.1em 0.2em black
 }
 
 .escritoUnicio h3 {
@@ -135,7 +136,7 @@
 
     #portadaFotoArriba img {
         display: flex;
-        width: clamp(1rem, 28rem, 55vw);
+        width: clamp(1rem, 28rem, 60vw);
     }
 
     .imagenInicio {
@@ -152,16 +153,13 @@
     }
 
 
-    .contenedorInicio .imagenInicio img {
+    /* .contenedorInicio .imagenInicio img {
         display: flex;
-        width: clamp(1rem, 25rem, 50vw);
+        width: clamp(1rem, 25rem, 55vw);
         border-radius: 50%;
         border: 2px solid white !important;
-    }
-
-    /* .floating-button-PDF img {
-        display: flex;
     } */
+
 
     .informacionPortada {
         display: flex;
