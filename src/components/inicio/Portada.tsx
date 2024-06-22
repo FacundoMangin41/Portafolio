@@ -1,9 +1,8 @@
-
 import SendIcon from '@mui/icons-material/Send';
-
-import './inicioComponente.css'
+import './inicioComponente.css';
 import Button from '@mui/material/Button';
-import { Box } from '@mui/material';
+import { Box, Tooltip, TooltipProps } from '@mui/material';
+import { styled } from '@mui/material/styles';
 import perfil from "../../assets/perfil.jpg";
 import PortadaDerecha from "../../assets/PordataDerecha.png";
 import { Link } from 'react-router-dom';
@@ -25,11 +24,30 @@ import trello from "../../assets/herramientas/trello.png";
 import vscode from "../../assets/herramientas/vs-code.png";
 import materialUI from "../../assets/herramientas/materialUI.png";
 
-
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
+
+// ------------------------------
+// Etiqueta para las skills
+// ------------------------------
+
+const CustomTooltip = styled(({ className, ...props }: TooltipProps) => (
+    <Tooltip {...props} classes={{ popper: className }} placement="top"/>
+))(({ theme }) => ({
+    [`& .MuiTooltip-tooltip`]: {
+        backgroundColor: '#407c7c',
+        color: 'white',
+        fontSize: '1rem',
+        borderRadius: '4px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+    },
+    [`& .MuiTooltip-arrow`]: {
+        color: '#407c7c',
+    },
+}));
+
 
 
 
@@ -46,7 +64,7 @@ function handleClick() {
     }
 }
 
-const Portada = () => {
+const Portada: React.FC = () => {
     const elementRefs = useRef<(HTMLDivElement | null)[]>([]);
 
     useEffect(() => {
@@ -57,32 +75,30 @@ const Portada = () => {
                     duration: 1000,
                     delay: 200,
                     distance: '20px',
-                    origin: 'bottom'
+                    origin: 'bottom',
                 });
             }
         });
     }, []);
 
-
     return (
         <Box className='contenedorInicio'>
             <div className="redesSocialesPortada">
-                <a href="https://www.instagram.com/facumangin/" target="_blank" >
-                    <InstagramIcon className='iconPortada' />
+                <a href="https://www.instagram.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+                    <InstagramIcon className='iconPortada'/>
                 </a>
-                <a href="https://www.linkedin.com/in/facundo-mangin-65359a268/" target="_blank" >
-                    <LinkedInIcon className='iconPortada' />
+                <a href="https://www.linkedin.com/in/tu_usuario" target="_blank" rel="noopener noreferrer">
+                    <LinkedInIcon className='iconPortada'/>
                 </a>
-                <a href="https://api.whatsapp.com/send?phone=543329305304" target="_blank" >
-                    <WhatsAppIcon className='iconPortada' />
+                <a href="https://wa.me/tu_numero" target="_blank" rel="noopener noreferrer">
+                    <WhatsAppIcon className='iconPortada'/>
                 </a>
-                <a href="https://www.facebook.com/facundo.mangin/" target="_blank" >
-                    <FacebookIcon className='iconPortada' />
+                <a href="https://www.facebook.com/tu_usuario" target="_blank" rel="noopener noreferrer">
+                    <FacebookIcon className='iconPortada'/>
                 </a>
             </div>
 
             <div className="informacionPortada">
-
                 <div className="imagenInicio" id='portadaFotoArriba' ref={(element) => { if (element) elementRefs.current.push(element); }}>
                     <img src={perfil} alt="" />
                 </div>
@@ -103,80 +119,86 @@ const Portada = () => {
 
                         <div className="skillsPortada" id="skills" ref={(element) => { if (element) elementRefs.current.push(element); }}>
                             <div className="skills-box" data-skills-box>
-
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={html5} alt="HTML5 logo" />
-                                    </div>
+                                    <CustomTooltip title="HTML5" arrow>
+                                        <div className="card-icon">
+                                            <img src={html5} alt="HTML5 logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={css} alt="CSS3 logo" />
-                                    </div>
+                                    <CustomTooltip title="CSS3" arrow>
+                                        <div className="card-icon">
+                                            <img src={css} alt="CSS3 logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={JavaScript} alt="JavaScript logo" />
-                                    </div>
+                                    <CustomTooltip title="JavaScript" arrow>
+                                        <div className="card-icon">
+                                            <img src={JavaScript} alt="JavaScript logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={typescript} alt="JavaScript logo" />
-                                    </div>
+                                    <CustomTooltip title="TypeScript" arrow>
+                                        <div className="card-icon">
+                                            <img src={typescript} alt="TypeScript logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={react} alt="JavaScript logo" />
-                                    </div>
+                                    <CustomTooltip title="React" arrow>
+                                        <div className="card-icon">
+                                            <img src={react} alt="React logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={bootstrap} alt="JavaScript logo" />
-                                    </div>
+                                    <CustomTooltip title="Bootstrap" arrow>
+                                        <div className="card-icon">
+                                            <img src={bootstrap} alt="Bootstrap logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={materialUI} alt="JavaScript logo" />
-                                    </div>
+                                    <CustomTooltip title="Material UI" arrow>
+                                        <div className="card-icon">
+                                            <img src={materialUI} alt="Material UI logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={sass} alt="JavaScript logo" />
-                                    </div>
+                                    <CustomTooltip title="Sass" arrow>
+                                        <div className="card-icon">
+                                            <img src={sass} alt="Sass logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={trello} alt="JavaScript logo" />
-                                    </div>
+                                    <CustomTooltip title="Trello" arrow>
+                                        <div className="card-icon">
+                                            <img src={trello} alt="Trello logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
 
                                 <div className="skill-card">
-
-                                    <div className="card-icon">
-                                        <img src={vscode} alt="JavaScript logo" />
-                                    </div>
+                                    <CustomTooltip title="VS Code" arrow>
+                                        <div className="card-icon">
+                                            <img src={vscode} alt="VS Code logo" />
+                                        </div>
+                                    </CustomTooltip>
                                 </div>
-
-
                             </div>
-
                         </div>
 
                         <div className="botonPortada" ref={(element) => { if (element) elementRefs.current.push(element); }}>
@@ -186,26 +208,18 @@ const Portada = () => {
                                 </Button>
                             </Link>
                         </div>
-
                     </div>
 
-                    {/* <div className="imagenInicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
-                    <img src={perfil} alt="" />
-                </div> */}
 
+
+                    <div className="floating-button-PDF" onClick={handleClick}>
+                        <img src={cv} alt="" />
+                    </div>
                 </div>
-
                 <div className="imagenInicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
-                    <img src={perfil} alt="" />
-                </div>
-
-                <div className="floating-button-PDF" onClick={handleClick}>
-                    <img src={cv} alt="" />
-                </div>
-                {/* <img src={PortadaDerecha} alt="" /> */}
-
+                        <img src={perfil} alt="" />
+                    </div>
             </div>
-
         </Box>
     );
 };
