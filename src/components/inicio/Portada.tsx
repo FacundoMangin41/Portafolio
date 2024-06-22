@@ -29,7 +29,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-import { motion } from 'framer-motion';
 
 
 // ------------------------------
