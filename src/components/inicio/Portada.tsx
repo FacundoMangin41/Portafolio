@@ -29,6 +29,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
+import { motion } from 'framer-motion';
+
+
 // ------------------------------
 // Etiqueta para las skills
 // ------------------------------
@@ -119,6 +122,7 @@ const Portada: React.FC = () => {
 
                         <div className="skillsPortada" id="skills" ref={(element) => { if (element) elementRefs.current.push(element); }}>
                             <div className="skills-box" data-skills-box>
+                                
                                 <div className="skill-card">
                                     <CustomTooltip title="HTML5" arrow>
                                         <div className="card-icon">
