@@ -26,6 +26,10 @@ import vscode from "../../assets/herramientas/vs-code.png";
 import materialUI from "../../assets/herramientas/materialUI.png";
 
 
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 
 
@@ -62,6 +66,21 @@ const Portada = () => {
 
     return (
         <Box className='contenedorInicio'>
+            <div className="redesSocialesPortada">
+                <a href="https://www.instagram.com/facumangin/" target="_blank" >
+                    <InstagramIcon className='iconPortada' />
+                </a>
+                <a href="https://www.linkedin.com/in/facundo-mangin-65359a268/" target="_blank" >
+                    <LinkedInIcon className='iconPortada' />
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=543329305304" target="_blank" >
+                    <WhatsAppIcon className='iconPortada' />
+                </a>
+                <a href="https://www.facebook.com/facundo.mangin/" target="_blank" >
+                    <FacebookIcon className='iconPortada' />
+                </a>
+            </div>
+
             <div className="informacionPortada">
 
                 <div className="imagenInicio" id='portadaFotoArriba' ref={(element) => { if (element) elementRefs.current.push(element); }}>
