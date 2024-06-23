@@ -61,59 +61,12 @@ body {
   margin: 0;
   min-height: 100vh;
 
-  background: linear-gradient(to right, rgba(1, 5, 48, 0.788), rgb(0, 0, 14)), url(/src/assets/fondoSobreMi.webp);
+  background:  linear-gradient(to right, rgba(1, 5, 48, 0.788), rgb(0, 0, 14)), url(/src/assets/fondoSobreMi.webp);
+  /* Color de toda la pagina */
+  /* background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #0142a0 0, #0a0b1f 44.41%, #0c0b24 56.46%, #080518 69.58%, #070416 100%, #020113 0); */
+  /* background: radial-gradient(79.43% 251.58% at 23.18% 73.07%, #010027 0, #050231 100%, #060322 69.58%, #101034 56.46%, #0f133a 44.41%, #0142a0 0); */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 8px 16px;
-}
-
-.navbar a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.main-content {
-  margin-top: 60px;
-}
-
-/* Media Queries para dispositivos móviles */
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .navbar a {
-    padding: 10px;
-    display: block;
-  }
-
-  .main-content {
-    margin-top: 80px; /* Ajusta esto según la altura de tu navbar en móviles */
-  }
-
-  body {
-    background-attachment: scroll; /* Evita problemas con el desplazamiento del fondo en móviles */
-  }
 }
