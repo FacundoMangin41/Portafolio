@@ -6,7 +6,7 @@
     /* flex-direction: column;  */
 
     margin: 0 13rem;
-    min-height: 80vh;
+    min-height: 83vh;
 }
 
 @media (max-width: 466px) {
@@ -22,7 +22,7 @@
     text-align: center;  
     /* flex-direction: column;  */
     gap: 2rem;
-    background-color: #1f2535b0;
+    background-color: #0c1329b0;
     padding: 2rem;
     border-radius: 10px;
     border: 2px solid var(--letrasSidebar)
