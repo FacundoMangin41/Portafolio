@@ -8,6 +8,8 @@
     -webkit-box-shadow: 0px 0px 44px 6px var(--SombrasBarraNavegacion) inset;
     -moz-box-shadow: 0px 0px 44px 6px var(--SombrasBarraNavegacion) inset; */
     border-bottom: 1px solid var(--recuadroContenedores) !important;
+    width: 100vw;
+    padding-right: 2.5rem !important;
 }
 
 .layoutsidebar{
@@ -54,6 +56,25 @@ min-width: 30px !important;
     width: 100%;  /* Toma el valor de todo el sidebar  */
     color: transparent;
 }
+
+
+
+
+
+.botonHamburguesaCelular{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .botonHamburguesaCelular{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+}
+
 .BotonHamburguesa{
     border-radius: 50%;
 }
@@ -106,3 +127,51 @@ min-width: 30px !important;
 }
 /*----------------------------------------------------
 ---------------------------------------------------- */
+
+.sidebarPc {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 1200px) {
+    .sidebarPc {
+        display: none;
+      }
+
+}
+  
+  .portafolioSidebarPc {
+    margin-right: auto; /* Empuja el portafolio a la izquierda */
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  
+  .buscadoresSidebarPc {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    text-align: center;
+    text-decoration: none !important;
+    margin: 0 auto; /* Centra el contenedor en la página */
+    width: 100vw; /* Asegura que ocupe todo el ancho disponible */
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    
+  }
+  
+  .buscadoresSidebarPc-link {
+    text-decoration: none; /* Quita el subrayado */
+    margin: 0 10px; /* Espaciado entre los enlaces */
+    color: inherit; /* Hereda el color del elemento padre */
+  }
+
+
+  .buscadoresSidebarPc-link.active {
+    background-color: #407c7c; /* Color de fondo cuando está activo */
+    font-weight: bold; /* O cualquier otra estilización adicional */
+    border-radius: 3px;
+    padding: 0.36rem;
+  }
