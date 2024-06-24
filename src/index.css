@@ -43,6 +43,9 @@
   #070823 69.58%, 
   #05051A 100%, 
   #020013 0%);
+
+  --transition: all 0.25s ease-out;
+  --transition5s: all 0.25s ease-out;
 }
 
 h1{

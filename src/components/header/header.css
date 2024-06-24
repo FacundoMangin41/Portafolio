@@ -102,7 +102,7 @@ min-width: 30px !important;
     border-radius: 7px;
     cursor: pointer;
     border: 1px solid var(--letrasSidebar);
-    transition: all 0.25s ease-in-out;
+    transition: var(--transition);
 }
 
 .botonDescargarPdfSidebar p:hover{
@@ -166,6 +166,7 @@ min-width: 30px !important;
     text-decoration: none; /* Quita el subrayado */
     margin: 0 10px; /* Espaciado entre los enlaces */
     color: inherit; /* Hereda el color del elemento padre */
+    transition: var(--transition);
   }
 
 
