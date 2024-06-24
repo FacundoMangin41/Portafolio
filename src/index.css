@@ -94,4 +94,9 @@ body {
     width: 4px; /* Ancho de la barra de desplazamiento */
   }
 
+  body {
+    background-attachment: local;
+
+  }
+
 }
