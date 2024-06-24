@@ -87,3 +87,10 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--hoverBotonPortada); /* Cambio de color al pasar el cursor */
 }
+
+@media (max-width: 1200px) {
+  ::-webkit-scrollbar {
+    width: 4px; /* Ancho de la barra de desplazamiento */
+  }
+
+}
