@@ -4,6 +4,7 @@ import Commander3D from '../../components/proyectos/Commander3D';
 import './proyectoPages.css';
 import SoftwareMunicipalidad from '../../components/proyectos/SoftwareMunicipalidad';
 import AeroClub from '../../components/proyectos/AeroClub';
+import ControlInversiones from '../../components/proyectos/ControlInversiones';
 
 const Proyectos = () => {
 
@@ -25,6 +26,10 @@ const Proyectos = () => {
 
     return (
         <div className='PagesProyectos'>
+            <div ref={(element) => { if (element) elementRefs.current.push(element); }}>
+                <ControlInversiones />
+            </div>
+
             <div ref={(element) => { if (element) elementRefs.current.push(element); }}>
                 <SoftwareMunicipalidad />
             </div>

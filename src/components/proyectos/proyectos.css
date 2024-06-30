@@ -11,7 +11,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 2rem;
     background-color: var(--recuadroContenedores);
     padding: 1rem;
     border-radius: 10px;
@@ -22,6 +21,7 @@
     border-radius: 10px;
     border: 2px solid var(--bordeImagenesProyecto);
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.3);
+    margin: 0 2rem;
 }
 
 .informacionProyecto{
@@ -38,6 +38,7 @@
     font-size: 1.2rem;
 }
 
+
 .ImagenDerechaCelulares{
     display: none;
 }
@@ -52,15 +53,18 @@
 .BotonProyecto{
     display: flex;
     gap: 0.5rem;
-    padding: 0.5rem !important;
+    padding: 0.5rem 1rem!important;
     color: var(--letrasPortada) !important;
     background-color:  var(--botonPortada) !important;
     border: 2px solid rgb(168, 168, 168) !important;
-    border-radius: 45%;
+    border-radius: 10px;
+    transition: var(--transition);
+    cursor: pointer;
 }
 
 .BotonProyecto:hover{
-    background-color: #c5c5c5 !important;
+    background-color: var(--hoverBotonPortada) !important;
+    transform: scale(1.05);
 }
 
 @media (max-width: 1135px) {
@@ -69,6 +73,7 @@
         width: 90%;
         flex-direction: column;
         padding: 1.2rem 1rem 1.5rem;
+        gap: 2rem;
     }
 
     .ImagenDerechaCelulares{
