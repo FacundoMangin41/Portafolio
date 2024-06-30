@@ -29,7 +29,7 @@ const ControlInversiones = () => {
         <Box className='contenedorBoxProyecto'>
             <div className="containerProyectos">
                 <div className="informacionProyecto">
-                    <h1>Software para Controla Inversiones</h1>
+                    <h1>Software para Control de Inversiones</h1>
                     <p>
                         Este software está diseñado para llevar un control detallado de las inversiones realizadas en la aplicación Rainbow.
                         Está dirigido a todo tipo de público que desee gestionar minuciosamente sus operaciones y estadísticas.
