@@ -5,6 +5,7 @@ import './proyectoPages.css';
 import SoftwareMunicipalidad from '../../components/proyectos/SoftwareMunicipalidad';
 import AeroClub from '../../components/proyectos/AeroClub';
 import ControlInversiones from '../../components/proyectos/ControlInversiones';
+import TradingDemo from '../../components/proyectos/TradingDemo';
 
 const Proyectos = () => {
 
@@ -26,6 +27,11 @@ const Proyectos = () => {
 
     return (
         <div className='PagesProyectos'>
+
+            <div ref={(element) => { if (element) elementRefs.current.push(element); }}>
+                <TradingDemo />
+            </div>
+
             <div ref={(element) => { if (element) elementRefs.current.push(element); }}>
                 <ControlInversiones />
             </div>
