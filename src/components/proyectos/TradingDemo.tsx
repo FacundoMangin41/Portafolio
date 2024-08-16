@@ -18,7 +18,7 @@ const TradingDemo = () => {
 
     function handleClickPagina() {
         // Define la URL que quieres abrir en la nueva pestaña
-        const url = 'https://demo-rainbow.netlify.app/';
+        const url = 'https://demo-inversiones.netlify.app/';
         // Abre una nueva pestaña con la URL especificada
         window.open(url, '_blank');
     }
