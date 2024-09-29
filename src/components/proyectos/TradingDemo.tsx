@@ -30,11 +30,7 @@ const TradingDemo = () => {
                     <img src={trading} alt="" className='ImagenIzquierda' />
                     <div className="informacionProyecto">
                         <h1>Simulador Trading</h1>
-                        <p>En el mundo del trading, la práctica y la experiencia son fundamentales para el éxito. 
-                            Para aquellos que se inician en este campo, la existencia de un software de trading en fase de 
-                            prueba es una herramienta invaluable. Este tipo de software, diseñado específicamente para la simulación de compra 
-                            y venta de activos, permite a los usuarios aprender y 
-                            familiarizarse con las dinámicas del mercado sin incurrir en riesgos financieros reales. </p>
+                        <p>"En el trading, la práctica es clave para alcanzar el éxito. Los principiantes pueden beneficiarse enormemente del software de simulación, que les permite familiarizarse con las dinámicas del mercado sin riesgos financieros reales. Estas plataformas ofrecen un entorno seguro para aprender a comprar y vender activos." </p>
                         <div className="botonesProyectos">
                             <button onClick={handleClick} className='BotonProyecto'><GitHubIcon /></button>
                             <button onClick={handleClickPagina} className='BotonProyecto'><RemoveRedEyeIcon /></button>

@@ -19,8 +19,7 @@ const Canva = () => {
                 <div className="informacionSkills">
                     <h1>Canva</h1>
                     <p>
-                    Canva es una plataforma en línea que permite a los usuarios crear una amplia variedad 
-                    de diseños gráficos de manera sencilla y sin necesidad de tener experiencia en diseño gráfico. </p>
+                    Creación visual rápida y efectiva.</p>
                 </div>
                 <img src={canva} alt="" className='ImagenDerechaSkills' />
             </div>

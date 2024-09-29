@@ -19,9 +19,7 @@ const Office = () => {
                 <div className="informacionSkills">
                     <h1>Office</h1>
                     <p>
-                    Incluye una variedad de programas diseñados para ayudar en tareas de oficina y productividad personal y profesional. <br />
-                    Algunos de los programas más comunes incluidos en Microsoft Office son: <br />
-                    Word - Excel - PowerPoint </p>
+                    "Productividad y gestión eficiente de datos."</p>
                 </div>
                 <img src={office} alt="" className='ImagenDerechaSkills' />
             </div>

@@ -12,8 +12,7 @@ const Figma = () => {
                 <img src={figma} alt="" className='ImagenIzquierdaSkills'/>
                 <div className="informacionSkills">
                     <h1>Figma</h1>
-                    <p>Figma es una herramienta de diseño de interfaz de usuario (UI) y experiencia de usuario (UX) basada en la web, 
-                        que permite a los diseñadores crear, colaborar y prototipar diseños de manera eficiente y en tiempo real. </p>
+                    <p>"Diseño de interfaces y prototipos interactivos." </p>
                 </div>
                 <img src={figma} alt="" className='ImagenDerechaCelularesSkills'/>
             </div>

@@ -13,7 +13,7 @@ const CardReact = () => {
                 <img src={react} alt="" className='ImagenIzquierdaSkills'/>
                 <div className="informacionSkills">
                     <h1>React JS</h1>
-                    <p>React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y dinámicas para aplicaciones web. </p>
+                    <p>Desarrollo de interfaces dinámicas y escalables.</p>
                 </div>
                 <img src={react} alt="" className='ImagenDerechaCelularesSkills'/>
             </div>

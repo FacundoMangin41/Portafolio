@@ -101,10 +101,10 @@
 }
 
 .escritoUnicio h3 {
-    font-size: clamp(1rem, 0.5rem, 5vw);
+    font-size: clamp(1rem, 1.1rem, 5vw);
     margin: 0;
     color: #cccccc;
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
 }
 

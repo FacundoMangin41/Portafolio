@@ -30,13 +30,7 @@ const AeroClub = () => {
                     <img src={aeroclubLincoln} alt="" className='ImagenIzquierda' />
                     <div className="informacionProyecto">
                         <h1>Software de Gestion Aeroclub Lincoln</h1>
-                        <p>El objetivo del proyecto es la creación de un sistema de software destinado a los
-                            aeroclubes de la Argentina, con el propósito de optimizar la gestión de sus actividades
-                            cotidianas, entre las cuales pueden mencionarse: formación de pilotos, mantenimiento
-                            de las aeronaves utilizadas, controles automatizados para asegurar el cumplimiento de
-                            las disposiciones y reglamentaciones vigentes, control de stock de insumos críticos,
-                            administración del capital social, promoción de las actividades aeronáuticas, entre
-                            otras.
+                        <p>"El proyecto tiene como objetivo desarrollar un sistema de software para aeroclubes de Argentina, optimizando la gestión de actividades como la formación de pilotos, el mantenimiento de aeronaves, controles automatizados para cumplir con reglamentaciones, control de stock de insumos, administración del capital social y promoción de actividades aeronáuticas."
                         </p>
                         <div className="botonesProyectos">
                             <button onClick={handleClick} className='BotonProyecto'><GitHubIcon /></button>

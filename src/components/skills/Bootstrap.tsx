@@ -12,8 +12,7 @@ const Bootstrap = () => {
                 <img src={Boots} alt="" className='ImagenIzquierdaSkills'/>
                 <div className="informacionSkills">
                     <h1>Bootstrap</h1>
-                    <p>Bootstrap es un popular framework de desarrollo front-end que proporciona un 
-                        conjunto de herramientas y componentes para crear interfaces de usuario web modernas y receptivas. </p>
+                    <p>"Framework flexible para diseños responsivos." </p>
                 </div>
                 <img src={Boots} alt="" className='ImagenDerechaCelularesSkills'/>
             </div>

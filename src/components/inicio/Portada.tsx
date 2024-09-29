@@ -114,9 +114,9 @@ const Portada: React.FC = () => {
 
                     <div className="contenedorEscritoInicio">
                         <div className="escritoUnicio" ref={(element) => { if (element) elementRefs.current.push(element); }}>
-                            <h3>"Poseo certificación como <span>desarrollador frontend especializado en React</span> y también estoy a punto de finalizar la carrera de
+                            <h3>"Certificación en <span>desarrollado frontend React</span> y próximo a finalizar la carrera de
                                 <span> analista en informática</span>.
-                                Esto me permite diseñar interfaces interactivas y desarrollar soluciones informáticas eficientes"</h3>
+                                Diseñador de interfaces interactivas y soluciones informáticas eficientes."</h3>
                         </div>
 
                         <div className="skillsPortada" id="skills" ref={(element) => { if (element) elementRefs.current.push(element); }}>

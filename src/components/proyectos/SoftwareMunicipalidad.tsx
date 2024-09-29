@@ -30,10 +30,7 @@ const SoftwareMunicipalidad = () => {
                     <img src={softwareGestion} alt="" className='ImagenIzquierda' />
                     <div className="informacionProyecto">
                         <h1>Software de Gestion</h1>
-                        <p>El sistema propuesto tiene como finalidad mejorar la eficiencia y la efectividad en diversas áreas de trabajo, 
-                            abordando aspectos fundamentales como el registro de usuarios, la gestión de inventarios de computadoras e impresoras, 
-                            la administración de áreas, la generación de reportes, el seguimiento de tareas y la gestión de órdenes de trabajo, 
-                            entre otros aspectos relevantes para el adecuado funcionamiento del Municipio. </p>
+                        <p>"El sistema busca mejorar la eficiencia en áreas clave como el registro de usuarios, la gestión de inventarios de computadoras e impresoras, la administración de áreas, la generación de reportes, el seguimiento de tareas y la gestión de órdenes de trabajo, optimizando el funcionamiento del Municipio." </p>
                         <div className="botonesProyectos">
                             <button onClick={handleClick} className='BotonProyecto'><GitHubIcon /></button>
                             <button onClick={handleClickPagina} className='BotonProyecto'><RemoveRedEyeIcon /></button>

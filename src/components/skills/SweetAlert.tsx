@@ -21,9 +21,7 @@ const SweetAlert = () => {
                 <div className="informacionSkills">
                     <h1>SweetAlert</h1>
                     <p>
-
-                        SweetAlert es una biblioteca de JavaScript que ofrece una alternativa elegante y
-                        altamente personalizable a los cuadros de diálogo modales estándar del navegador. Se utiliza comúnmente para crear ventanas emergentes </p>
+                    "Alertas atractivas para mejorar la UX." </p>
                 </div>
                 <img src={alert} alt="" className='ImagenDerechaSkills' />
             </div>
