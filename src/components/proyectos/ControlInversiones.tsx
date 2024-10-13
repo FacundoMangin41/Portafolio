@@ -16,7 +16,7 @@ function handleClick() {
 
 function handleClickPagina() {
     // Define la URL que quieres abrir en la nueva pestaña
-    const url = 'https://rainbow-inversiones.netlify.app/';
+    const url = 'https://control-inversiones.netlify.app/';
     // Abre una nueva pestaña con la URL especificada
     window.open(url, '_blank');
 }
