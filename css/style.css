@@ -875,6 +875,26 @@ justify-content: first baseline;
 
 
 
+/* Estilo general para el scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+    height: 12px; /* Altura del scrollbar (para scroll horizontal) */
+}
+
+/* Estilo para la parte del scrollbar que se mueve (thumb) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color); /* Color del scrollbar */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+/* Estilo para la pista del scrollbar */
+::-webkit-scrollbar-track {
+    background: var(--bg-color); /* Color de fondo de la pista */
+    border-radius: 10px;
+}
+
+
+
 
 #particles-js {
     position: fixed; /* Fija las partículas en su lugar */
