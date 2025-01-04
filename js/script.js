@@ -112,13 +112,26 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     // Send the email
     emailjs.send('service_u8b1m3r', 'template_1kvo1io', formData)
         .then(response => {
-            alert('Message sent successfully!');
+            // Alerta de éxito con SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: '¡Mensaje enviado!',
+                text: 'Tu mensaje se ha enviado correctamente.',
+                confirmButtonText: 'Aceptar'
+            });
         })
         .catch(error => {
-            alert('Failed to send message. Please try again.');
+            // Alerta de error con SweetAlert
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'No se pudo enviar el mensaje. Por favor, intenta de nuevo.',
+                confirmButtonText: 'Aceptar'
+            });
             console.error(error);
         });
 });
+
 
 
 
