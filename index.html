@@ -1,13 +1,358 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./src/assets/perfil.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Facundo Mangin</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facundo Mangin</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+
+<body>
+
+    <div id="particles-js" class="particulas"></div>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portafolio.</a>
+
+        <div class='bx bx-menu' id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#about">Sobre mi</a>
+            <a href="#services">Servicios</a>
+            <a href="#portfolio">Proyectos</a>
+            <a href="#Experiencia">Exp Laboral</a>
+            <a href="#certificaciones">Logros</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home" id="particles-js">
+
+        <div class="home-img Arriba">
+            <img src="images/home.png" alt="">
+        </div>
+
+        <div class="home-content">
+            <h3>Hola, Me llamo</h3>
+            <h1>Facundo Mangin</h1>
+            <h3>Y soy un <span class="multiple-text"></span></h3>
+            <p>Certificación en desarrollador frontend React y próximo a finalizar<br> la carrera de analista en
+                informática.
+                <br>Diseñador de interfaces interactivas y soluciones informáticas eficientes.
+            </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/facundo.mangin/" target="_blank"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/FacundoMangin41" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/facumangin/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.linkedin.com/in/facundomangin/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="/images/CV Facundo Mangin - Analista en Informatica 2024.pdf" target="_blank" class="btn">Descargar
+                CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">Acerca de<span> Mi</span></h2>
+            <h3>Frontend Developer!</h3>
+            <p>Hola, mi nombre es Facundo Mangin, tengo 24 años, resido en Baradero, Buenos Aires, Argentina y tengo
+                como principal objetivo trabajar y lograr independencia económica. <br>
+                Actualmente estoy terminando la carrera de analista informática y me encuentro realizando una pagina web
+                de gestion para el municipio de Baradero. <br>
+                Tengo varios cursos realizados los cuales pueden encontrarlos en la sección de este portafolio. <br>
+            </p>
+            <a href="#" class="btn" id="openModal">Leer más</a>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="images/fotoPersonal.jpg" alt="Imagen sobre mí" class="modal-image">
+            <div class="modal-text">
+                <h2>Más <span>Sobre Mi</span></h2>
+                <p>¡Hola de nuevo! Además de mi pasión por el desarrollo web, disfruto aprender constantemente sobre
+                    nuevas tecnologías y trabajar en proyectos desafiantes que me permitan crecer profesionalmente.</p>
+                <p>Actualmente, me desempeño en el sector de producción en Alimentos Granix. Sin embargo, mi verdadera
+                    pasión radica en el desarrollo web. En mis tiempos libres, dedico mi energía y creatividad al
+                    desarrollo
+                    frontend, perfeccionando mis habilidades y buscando oportunidades para crecer en este campo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Mis <span>Servicios</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Convertir ideas en soluciones funcionales mediante la programación,
+                    creando un equilibrio perfecto entre diseño, rendimiento y experiencia del usuario en cualquier
+                    plataforma.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Web Design</h3>
+                <p>Combinar creatividad y tecnología para crear experiencias interactivas que sean atractivas,
+                    funcionales y centradas en el usuario, optimizadas para todo tipo de dispositivos.</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Proyectos <span>Destacados</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/softwareGestion.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Gestion Municipal</h4>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
+                    <a href="https://munibara.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/trading.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Simulador de Trading</h4>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
+                    <a href="https://demo-inversiones.netlify.app/login" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/personalpage.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Commander 3D</h4>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
+                    <a href="https://commander3d.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/softwareInversiones.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Control de inversiones</h4>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
+                    <a href="https://control-inversiones.netlify.app/login" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/aeroclubLincoln.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Gestion Aeroclub</h4>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
+                    <a href="https://github.com/FacundoMangin41/Proyecto-Aeroclub" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+<!-- 
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Exp section design -->
+    <section class="Experiencia" id="Experiencia">
+        <h2 class="heading">Experiencia <span>Laboral</span></h2>
+
+        <div class="Experiencia-container">
+            <div class="Experiencia-box">
+                <div class="Experiencia-container-box">
+                    <div class="Experiencia-box-imagen">
+                        <img src="images/granix.png" alt="">
+                    </div>
+                    <div class="Experiencia-box-texto">
+                        <h3>Alimentos Granix</h3>
+                        <div>
+                            <li>Empaquetado</li>
+                        </div>
+                    </div>
+                </div>
+                <h4>Desde 2024 - Actualidad</h4>
+            </div>
+
+            <div class="Experiencia-box">
+                <div class="Experiencia-container-box">
+                    <div class="Experiencia-box-imagen">
+                        <img src="images/Inove.png" alt="">
+                    </div>
+                    <div class="Experiencia-box-texto">
+                        <h3>Desarrollador FrontEnd - ReactJS</h3>
+                        <div>
+                            <li>Software de Gestión Municipal Baradero</li>
+                            <li>Catalogo de Impresión 3D</li>
+                            <li>Software de Gestión Aeroclub Lincoln</li>
+                        </div>
+                    </div>
+                </div>
+                <h4>Desde 2023 - Hasta 2023</h4>
+            </div>
+
+            <div class="Experiencia-box">
+                <div class="Experiencia-container-box">
+                    <div class="Experiencia-box-imagen">
+                        <img src="images/municipalidadBaradero.jpg" alt="">
+                    </div>
+                    <div class="Experiencia-box-texto">
+                        <h3>Desarrollador FrontEnd - ReactJS</h3>
+                        <div>
+                            <li>Mantenimiento e instalacion de Equipos</li>
+                            <li>Armado de PC</li>
+                            <li>Instalación de Softwares</li>
+                            <li>Impresoras (LAN, USB, WiFi)</li>
+                            <li>Cableados de Ethernet y Fibra Óptica</li>
+                            <li>Organización de cableados</li>
+                            <li>Telefonía</li>
+                        </div>
+                    </div>
+                </div>
+                <h4>Desde 2022 - Hasta 2024</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="certificaciones" id="certificaciones">
+        <h2 class="heading">Mis <span>Logros</span></h2>
+
+        <div class="certificaciones-container">
+            <div class="certificaciones-box">
+                <img src="images/carreraFrontEnd.png" alt="">
+                <div class="certificaciones-layer">
+                    <h4>Carrera Desarrollador FrontEnd ReactJS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                    <a href="http://admin.inovecode.com/perfil/561/certificados/carrera/frontend/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="certificaciones-box">
+                <img src="images/React.png" alt="">
+                <div class="certificaciones-layer">
+                    <h4>React JS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                    <a href="http://admin.inovecode.com/perfil/561/certificados/18/proyecto/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="certificaciones-box">
+                <img src="images/JavaScript.png" alt="">
+                <div class="certificaciones-layer">
+                    <h4>JavaScript</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                    <a href="http://admin.inovecode.com/perfil/561/certificados/16/proyecto/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="certificaciones-box">
+                <img src="images/html.png" alt="">
+                <div class="certificaciones-layer">
+                    <h4>HTML / CSS</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                    <a href="http://admin.inovecode.com/perfil/561/certificados/14/proyecto/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="certificaciones-box">
+                <img src="images/Python Inicial.png" alt="">
+                <div class="certificaciones-layer">
+                    <h4>Python Inicial</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                    <a href="http://admin.inovecode.com/perfil/561/certificados/2/proyecto/" target="_blank"><i
+                            class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Mi <span>Contacto!</span></h2>
+
+        <form id="contact-form">
+            <div class="input-box">
+                <input type="text" id="fullName" placeholder="Nombre completo" required>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <textarea id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 Facundo Mangin | Frontend Developer.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
 </html>
