@@ -177,7 +177,7 @@ span {
     align-items: center;
     gap: 2rem;
     background: var(--second-bg-color);
-
+    padding: 0 9%;
 }
 
 .about-img img {
@@ -840,6 +840,7 @@ justify-content: first baseline;
     .about {
         flex-direction: column-reverse;
         min-height: auto;
+        padding-top: 9rem;
         padding-bottom: 9rem;
     }
 
