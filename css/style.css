@@ -11,10 +11,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-h2{
-    font-weight: bold;
-}
-
 :root {
     --bg-color: #1f242d;
     --second-bg-color: #323946;
@@ -54,9 +50,6 @@ section {
     align-items: center;
     z-index: 100;
 }
-header a{
-    text-decoration: none ;
-}
 
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
@@ -73,7 +66,6 @@ header a{
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
-    text-decoration: none ;
 }
 
 .navbar a:hover,
@@ -269,14 +261,6 @@ span {
 }
 
 .portfolio-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* 
-.portfolio-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -322,7 +306,7 @@ span {
 
 .portfolio-box:hover .portfolio-layer {
     transform: translateY(0);
-} */
+}
 
 .portfolio-layer h4 {
     font-size: 3rem;
@@ -951,160 +935,3 @@ justify-content: first baseline;
     z-index: -1; /* Asegura que las partículas estén en el fondo */
     pointer-events: none; /* Permite que el contenido de la página sea clickeable */
 }
-
-
-
-
-
-
-
-
-
-
-
-/* ================================ Carrusel =============================== */
-
-
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
-
-/*---------------------------------------------------------------------------------------- */
-/*-------------------------- Variables --------------------------------- */
-/*---------------------------------------------------------------------------------------- */
-
-
-/*---------------------------------------------------------------------------------------- */
-/*-------------------------- Imagen Galeria --------------------------------- */
-/*---------------------------------------------------------------------------------------- */
-
-
-.seccion-carrusel{
-  padding: 100px 0px 100px 0px;
-  background: rgb(255, 245, 241);
-  border-top: 5px solid var(--color-borde-margen-arriba);
-}
-
-#footer{
-  margin-top: 5rem;
-}
-
-.portafolio {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background: var(--color-fondo);
-    background-size: cover;
-    margin: 6rem 0 4rem;
-}
-
-.titulo-carrusel{
-    padding:0 10px 10px 10px; 
-    margin-bottom:40px;
-    color: #2677ce;
-}
-
-.contenedor-carousel{
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-    width: 100%;
-    overflow: hidden;
-    align-items: center;
-}
-
-  .owl-carousel .item img {
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-  .custom-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-
-
-  .custom-prev,
-  .custom-next {
-    background: transparent;
-    border: none;
-    font-size: 2.5rem;
-    color: #081220;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-
-  .custom-prev:hover,
-  .custom-next:hover {
-    color: #007bff;
-  }
-
-  .card {
-    height: 100%;
-  }
-
-  .card-img-top {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-
-  .card-body{
-    height: 6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-    .card-body h4{
-margin-top: 0.5rem;
-margin-bottom: 0;
-  }
-
-/*---------------------------------------------------------------------------------------- */
-  
-/*--------------------------------------------------------------
------------------------  Respónsive  ---------------------------
-----------------------------------------------------------------*/
-@media (max-width: 1230px) {
-
-.portafolio {
-    padding: 0 9% 5rem;
-    margin: 0;
-}
-
-  }
-
-
-@media screen and (max-width: 900px){
-  .titulo-carrusel{
-      font-size:60px;
-  }
-
-} 
-
-
-@media only screen and (max-width: 730px)  {
-   
-  .seccion-carrusel{
-    padding: 50px 0px 50px 0px;
-  }
-
-  .titulo-carrusel{
-    padding:0
-  }
-}
-
-
-
-
-@media screen and (max-width: 368px){
-    
-  .titulo-carrusel{
-    font-size:45px;
-  }
-
-} 
-
