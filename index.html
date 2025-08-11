@@ -8,6 +8,11 @@
     <link rel="icon" type="image/svg+xml" href="/images//home.png" />
     <title>Facundo Mangin</title>
 
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
     <!-- box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -143,65 +148,98 @@
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Proyectos <span>Destacados</span></h2>
 
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="images/softwareGestion.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Gestion Municipal</h4>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
-                    <a href="https://munibara.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
+        <div class="swiper portfolio-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="portfolio-box">
+                        <img src="images/BuenaMaizon.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Buena Maizon</h4>
+                            <a href="https://www.buenamaizon.com.ar/" target="_blank"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-box">
+                        <img src="images/softwareGestion.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Gestion Municipal</h4>
+                            <a href="https://munibara.netlify.app/" target="_blank"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-box">
+                        <img src="images/trading.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Simulador de Trading</h4>
+                            <a href="https://demo-inversiones.netlify.app/login" target="_blank"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-box">
+                        <img src="images/personalpage.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Commander 3D</h4>
+                            <a href="https://commander3d.netlify.app/" target="_blank"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-box">
+                        <img src="images/softwareInversiones.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Control de inversiones</h4>
+                            <a href="https://control-inversiones.netlify.app/login" target="_blank"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="portfolio-box">
+                        <img src="images/aeroclubLincoln.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Control de inversiones</h4>
+                            <a href="https://control-inversiones.netlify.app/login" target="_blank"><i
+                                    class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/trading.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Simulador de Trading</h4>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
-                    <a href="https://demo-inversiones.netlify.app/login" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
+            <div class="portfolio-description">
+                <p>
+                    Cada uno de estos trabajos tiene su historia. Algunos empezaron como simples ideas en un cuaderno y terminaron siendo 
+                    herramientas reales que hoy están en uso.
+                    Me gusta buscar soluciones creativas, cuidar cada detalle y aprender algo nuevo en el camino.
+                </p>
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/personalpage.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Commander 3D</h4>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
-                    <a href="https://commander3d.netlify.app/" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div>
+            <!-- Flechas -->
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
 
-            <div class="portfolio-box">
-                <img src="images/softwareInversiones.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Control de inversiones</h4>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
-                    <a href="https://control-inversiones.netlify.app/login" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/aeroclubLincoln.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Gestion Aeroclub</h4>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p> -->
-                    <a href="https://github.com/FacundoMangin41/Proyecto-Aeroclub" target="_blank"><i
-                            class='bx bx-link-external'></i></a>
-                </div>
-            </div>
-<!-- 
-            <div class="portfolio-box">
-                <img src="images/portfolio6.jpg" alt="">
-                <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
-                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
-                </div>
-            </div> -->
+            <!-- Paginación -->
+            <div class="swiper-pagination"></div>
         </div>
     </section>
+
+
+
+
+
 
     <!-- Exp section design -->
     <section class="Experiencia" id="experience">
@@ -358,7 +396,9 @@
     <!-- custom js -->
     <script src="js/script.js"></script>
 
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/carrusel.js"></script>
 
 </body>
 
