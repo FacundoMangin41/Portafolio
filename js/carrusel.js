@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-  function initSwiper() {
+  function initSwiper(selector) {
     const isMobile = window.innerWidth <= 768;
 
-    return new Swiper('.portfolio-swiper', {
-      loop: isMobile ? false : true,  // desactiva loop en mobile para cards
+    return new Swiper(selector, {
+      loop: isMobile ? false : true,
       grabCursor: true,
       centeredSlides: true,
       watchSlidesProgress: true,
@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         : {},
 
-      slidesPerView: 1,    // siempre 1 slide visible
-
+      slidesPerView: 1,
       spaceBetween: isMobile ? 15 : 30,
 
       autoplay: {
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
 
       pagination: {
-        el: '.swiper-pagination',
+        el: selector + ' .swiper-pagination',
         clickable: true,
       },
 
@@ -55,10 +54,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  let swiper = initSwiper();
+  // Inicializamos ambos carruseles
+  let portfolioSwiper = initSwiper('.portfolio-swiper');
+  let logrosSwiper = initSwiper('.logros-swiper');
 
   window.addEventListener('resize', () => {
-    swiper.destroy(true, true);
-    swiper = initSwiper();
+    portfolioSwiper.destroy(true, true);
+    logrosSwiper.destroy(true, true);
+
+    portfolioSwiper = initSwiper('.portfolio-swiper');
+    logrosSwiper = initSwiper('.logros-swiper');
   });
 });
