@@ -205,6 +205,10 @@ span {
     margin: 2rem 0 3rem;
 }
 
+
+
+
+/* ---- SECCIÓN SERVICIOS ---- */
 .services {
     min-height: auto;
     padding-bottom: 10rem;
@@ -214,35 +218,64 @@ span {
     margin-bottom: 5rem;
 }
 
+
+
+/* Contenedor */
 .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
 }
 
-.services-container .services-box {
-    flex: 1 1 30rem;
-    background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
+/* Card */
+.services-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
-.services-container .services-box:hover {
-    border-color: var(--main-color);
-    transform: scale(1.02);
+/* Hover con gradiente */
+.services-box::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 180deg at 50% 50%, #00c6ff, #0072ff, #00ffcc, #00c6ff);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 0;
+}
+
+.services-box:hover::before {
+  opacity: 0.15;
+}
+
+.services-box:hover {
+  transform: translateY(-12px) scale(1.03);
+  border-color: rgba(0, 198, 255, 0.6);
+  box-shadow: 0 15px 35px rgba(0, 198, 255, 0.3);
 }
 
 .services-box i {
-    font-size: 7rem;
+    font-size: 6rem;
     color: var(--main-color);
 }
 
+
 .services-box h3 {
+    margin-top: 1rem;
     font-size: 2.6rem;
 }
 
@@ -250,6 +283,7 @@ span {
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
 }
+
 
 
 
@@ -478,16 +512,12 @@ span {
 }
 
 .Experiencia h2 {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 4rem;
-  color: #fff;
+    margin-bottom: 5rem;
 }
 
 /* Línea de tiempo */
 .timeline {
   position: relative;
-
   margin: 0 auto;
 }
 
@@ -608,8 +638,10 @@ span {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
+
+
   .timeline::after {
-    left: 20px;
+    display: none;
   }
 
   .timeline-item {
