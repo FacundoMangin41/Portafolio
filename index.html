@@ -463,13 +463,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contáctame <span>ahora!</span></h2>
 
-        <form id="contact-form">
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+
             <div class="input-box">
-                <input type="text" id="fullName" placeholder="Nombre completo" required>
-                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" name="fullName" placeholder="Nombre completo" required>
+                <input type="email" name="email" placeholder="Email" required>
             </div>
-            <textarea id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-            <input type="submit" value="Enviar Email" class="btn">
+
+            <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
         </form>
     </section>
 
