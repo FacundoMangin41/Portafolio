@@ -46,7 +46,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form, .certificaciones-box, .portfolio-swiper, .logros-swiper, .Experiencia-box, .particulas', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .timeline, .timeline-item, .contact form, .certificaciones-box, .portfolio-swiper, .logros-swiper, .Experiencia-box, .particulas', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
