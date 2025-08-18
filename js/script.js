@@ -96,41 +96,41 @@ document.addEventListener("DOMContentLoaded", () => {
 /*==================== Email ====================*/
 
 // Initialize EmailJS
-emailjs.init('G_yripSlALquN7bi5'); // Reemplaza 'YOUR_PUBLIC_KEY' con tu clave pública de EmailJS
+// emailjs.init('G_yripSlALquN7bi5'); // Reemplaza 'YOUR_PUBLIC_KEY' con tu clave pública de EmailJS
 
-// Add event listener to the form
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita el envío del formulario
+// // Add event listener to the form
+// document.getElementById('contact-form').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Evita el envío del formulario
 
-    // Recoge los datos del formulario
-    const formData = {
-        from_name: document.getElementById('fullName').value, // Nombre del remitente
-        from_email: document.getElementById('email').value, // Email del remitente
-        message: document.getElementById('message').value, // Mensaje
-    };
+//     // Recoge los datos del formulario
+//     const formData = {
+//         from_name: document.getElementById('fullName').value, // Nombre del remitente
+//         from_email: document.getElementById('email').value, // Email del remitente
+//         message: document.getElementById('message').value, // Mensaje
+//     };
 
-    // Send the email
-    emailjs.send('service_u8b1m3r', 'template_1kvo1io', formData)
-        .then(response => {
-            // Alerta de éxito con SweetAlert
-            Swal.fire({
-                icon: 'success',
-                title: '¡Mensaje enviado!',
-                text: 'Tu mensaje se ha enviado correctamente.',
-                confirmButtonText: 'Aceptar'
-            });
-        })
-        .catch(error => {
-            // Alerta de error con SweetAlert
-            Swal.fire({
-                icon: 'error',
-                title: 'Error',
-                text: 'No se pudo enviar el mensaje. Por favor, intenta de nuevo.',
-                confirmButtonText: 'Aceptar'
-            });
-            console.error(error);
-        });
-});
+//     // Send the email
+//     emailjs.send('service_u8b1m3r', 'template_1kvo1io', formData)
+//         .then(response => {
+//             // Alerta de éxito con SweetAlert
+//             Swal.fire({
+//                 icon: 'success',
+//                 title: '¡Mensaje enviado!',
+//                 text: 'Tu mensaje se ha enviado correctamente.',
+//                 confirmButtonText: 'Aceptar'
+//             });
+//         })
+//         .catch(error => {
+//             // Alerta de error con SweetAlert
+//             Swal.fire({
+//                 icon: 'error',
+//                 title: 'Error',
+//                 text: 'No se pudo enviar el mensaje. Por favor, intenta de nuevo.',
+//                 confirmButtonText: 'Aceptar'
+//             });
+//             console.error(error);
+//         });
+// });
 
 
 
@@ -155,7 +155,7 @@ particlesJS("particles-js", {
         anim: { enable: true, speed: 1, opacity_min: 0, sync: false }
       },
       size: {
-        value: 3,
+        value: 4,
         random: true,
         anim: { enable: false, speed: 4, size_min: 0.3, sync: false }
       },
@@ -194,23 +194,23 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
-  var count_particles, stats, update;
-  stats = new Stats();
-  stats.setMode(0);
-  stats.domElement.style.position = "absolute";
-  stats.domElement.style.left = "0px";
-  stats.domElement.style.top = "0px";
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector(".js-count-particles");
-  update = function () {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
+  // var count_particles, stats, update;
+  // stats = new Stats();
+  // stats.setMode(0);
+  // stats.domElement.style.position = "absolute";
+  // stats.domElement.style.left = "0px";
+  // stats.domElement.style.top = "0px";
+  // document.body.appendChild(stats.domElement);
+  // count_particles = document.querySelector(".js-count-particles");
+  // update = function () {
+  //   stats.begin();
+  //   stats.end();
+  //   if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+  //     count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+  //   }
+  //   requestAnimationFrame(update);
+  // };
+  // requestAnimationFrame(update);
   
 
 
