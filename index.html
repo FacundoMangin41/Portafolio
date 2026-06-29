@@ -175,6 +175,109 @@
         </div>
     </div>
 
+
+    <!-- Certificado unsada -->
+    <section class="education" id="educacion">
+
+        <div class="title">
+            <div class="icon">🎓</div>
+
+            <div>
+                <h2>Universidad Nacional de San Antonio de Areco</h2>
+                <p>Mi formación universitaria y documentación respaldatoria.</p>
+            </div>
+        </div>
+
+        <div class="education-container">
+
+            <!-- Información -->
+            <div class="education-card">
+
+                <span class="badge">TÍTULO OBTENIDO</span>
+
+                <h1>Analista en Informática </h1>
+
+                <h3>Universidad Nacional de San Antonio de Areco</h3>
+
+                <ul>
+
+                    <li>✔ Título Oficial</li>
+                    <li>✔ Año de egreso: 2026</li>
+                    <li>✔ Modalidad: Presencial</li>
+
+                </ul>
+
+                <div class="description">
+
+                    Formación orientada a la resolución de problemas,
+                    trabajo en equipo, desarrollo profesional y aprendizaje
+                    continuo.
+
+                </div>
+
+            </div>
+
+            <!-- Certificados -->
+
+            <div class="documents">
+
+                <div class="document-card">
+
+                    <img src="./images/certificado.jpg" alt="Certificado">
+
+                    <div class="info">
+
+                        <h3>Certificado de Título</h3>
+
+                        <p>
+                            Vista previa del certificado.
+                            Los datos personales fueron ocultados.
+                        </p>
+
+                        <button onclick="window.open('./images/Mangin Facundo_firmado_firmado_firmado.pdf')">
+                            Ver credencial
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="document-card">
+
+                    <img src="./images/analitico.png" alt="Analítico">
+
+                    <div class="info">
+
+                        <h3>Certificado Analítico</h3>
+
+                        <p>
+                            Vista previa del analítico de materias aprobadas.
+                        </p>
+
+                        <button onclick="verCredencial()">
+                            Ver credencial
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="privacy">
+
+            🔒 Los documentos mostrados contienen información
+            sensible parcialmente oculta para proteger mi privacidad.
+
+        </div>
+
+    </section>
+
+
+
+
     <!-- services section design -->
     <section class="services" id="services">
         <h2 class="heading">Mis <span>Servicios</span></h2>
@@ -405,7 +508,7 @@
 
     <!-- certificaciones section design -->
     <section class="certificaciones" id="certifications">
-        <h2 class="heading">Mis <span>Logros</span></h2>
+        <h2 class="heading">Mis <span>Certificaciones</span></h2>
 
         <div class="swiper logros-swiper">
             <div class="swiper-wrapper">
@@ -530,6 +633,36 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/carrusel.js"></script>
+
+    <script>
+        function verCredencial() {
+            Swal.fire({
+                title: '📄 Credencial profesional',
+                html: `
+            <p style="font-size:16px; line-height:1.7; color:#555; margin:0;">
+                Esta credencial contiene información personal y profesional.<br><br>
+                Está pensada exclusivamente para ser enviada a empresas o
+                postulaciones laborales que realices de forma voluntaria.<br><br>
+                <br>
+                Gracias por confiar.
+            </p>
+        `,
+                icon: 'info',
+                width: 520,
+                padding: '2rem',
+                confirmButtonText: 'Entendido',
+                confirmButtonColor: '#2563eb',
+                showCancelButton: false,
+                allowOutsideClick: true,
+                allowEscapeKey: true,
+                backdrop: 'rgba(0,0,0,0.45)',
+                customClass: {
+                    popup: 'swal-elegante',
+                    confirmButton: 'swal-boton'
+                }
+            });
+        }
+    </script>
 
 </body>
 
