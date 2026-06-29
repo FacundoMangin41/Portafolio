@@ -304,6 +304,7 @@ span {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 60px;
 
@@ -334,6 +335,7 @@ span {
 
     color: #b7b7b7;
     font-size: 1.6rem;
+    font-weight: 600;
 
 }
 
@@ -471,33 +473,38 @@ span {
 }
 
 .info button {
-
+    display: inline-block;
     width: 180px;
     height: 50px;
 
     background: var(--main-color);
 
-    color: var(--bg-color);
+    color: var(--second-bg-color);
 
     font-weight: 600;
 
     border: none;
 
-    border-radius: 12px;
+    border-radius: 4rem;
+
+    box-shadow: 0 0 1rem var(--main-color);
 
     cursor: pointer;
 
     font-size: 16px;
 
-    transition: .3s;
+    transition: .5s ease;
+
+    letter-spacing: .1rem;
 
 }
 
 .info button:hover {
 
-    background: var(--bt-hover);
+    box-shadow: none;
 
 }
+
 
 .privacy {
 
@@ -517,7 +524,27 @@ span {
 
 }
 
-@media(max-width:1000px) {
+
+
+@media(max-width:1440px) {
+
+    .title {
+
+        text-align: left;
+        gap: 20px;
+        margin-bottom: 60px;
+
+    }
+
+    .title h2 {
+
+        font-size: 4.5rem;
+
+    }
+
+}
+
+@media(max-width:1024px) {
 
     .education-container {
 
